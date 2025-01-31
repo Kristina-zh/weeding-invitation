@@ -44,7 +44,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body
-        className={`${nunito.variable} ${poppins.variable} ${windSong.variable} ${greatVibes.variable} antialiased`}
+        className={`${nunito.variable} ${poppins.variable} ${windSong.variable} ${greatVibes.variable} antialiased max-w-[2000px] mx-auto`}
         style={{
           fontFamily: `'Poppins', 'WindSong', 'Nunito', 'GreatVibes', sans-serif`,
         }}

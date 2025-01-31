@@ -38,8 +38,8 @@ const Home = () => {
   const fontClass = language === "Russian" || language === "Ukrainian" ? "font-greatvibes" : "font-windsong";
 
   return (
-    <section id="home" className="bg-white flex flex-col justify-center items-center pt-[80px]">
-      <motion.div className="w-screen h-[240px] lg:h-[640px] relative" variants={containerVariants}
+    <section id="home" className="bg-white flex flex-col justify-center items-center pt-[60px]">
+      <motion.div className="w-screen max-w-[2000px] h-[240px] lg:h-[640px] relative" variants={containerVariants}
         initial="hidden"
         animate="visible">
         <Image
