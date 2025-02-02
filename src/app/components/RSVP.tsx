@@ -12,38 +12,30 @@ const Registration = () => {
   const { language, menus } = useLanguage();
 
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
+    firstName: "",
+    lastName: "",
+    email: "",
     isJoining: false,
     isPlusOne: false,
     isTransportNeeded: false,
-    contactNumber: '',
-    allergy: '',
-    message: '',
+    contactNumber: "",
+    allergy: "",
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value, type, checked } = e.target;
-    if (type === "checkbox") {
-      setFormData((prevData) => ({
-        ...prevData,
-        [name]: checked,
-      }));
-    } else if (name.startsWith("events")) {
-      setFormData((prevData) => ({
-        ...prevData,
-        events: {
-          ...prevData.events,
-          [name.replace("events.", "")]: checked,
-        },
-      }));
-    } else {
-      setFormData((prevData) => ({
-        ...prevData,
-        [name]: value,
-      }));
-    }
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleCheckboxChange = (name: string, checked: boolean) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: checked,
+    }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -76,7 +68,7 @@ const Registration = () => {
         message: "",
       });
     } catch (error) {
-      console.error(error)
+      console.error(error);
       alert("An error occurred while submitting the form.");
     }
   };
@@ -111,33 +103,25 @@ const Registration = () => {
         },
       }}
     >
-      <motion.h2
-        variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[80px] text-gray-500 ${fontClass}`}
+      <motion.h2 variants={titleVariants} className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][4]}
       </motion.h2>
 
       <div className="md:w-[80%] max-w-[760px] mx-auto p-5 lg:p-7 bg-white bg-opacity-80 rounded-lg shadow-custom my-10 lg:my-0">
-        <p className="text-2xl mb-6 text-center font-nunito font-bold">
-          {rsvpTranslations[language].title}
-        </p>
+        <p className="text-2xl mb-6 text-center font-nunito font-bold">{rsvpTranslations[language].title}</p>
         <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-5 flex flex-col">
           <motion.div variants={inputVariants}>
             <div className="flex flex-col lg:flex-row space-y-4 lg:space-x-7 lg:space-y-0">
               <CustomCheckbox
                 checked={formData.isJoining}
-                onChange={(checked) =>
-                  setFormData((prevData) => ({ ...prevData, isJoining: checked }))
-                }
+                onChange={(checked) => handleCheckboxChange("isJoining", checked)}
                 label={rsvpTranslations[language].question1}
                 name="isJoining"
               />
               <CustomCheckbox
                 checked={formData.isPlusOne}
-                onChange={(checked) =>
-                  setFormData((prevData) => ({ ...prevData, isPlusOne: checked }))
-                }
+                onChange={(checked) => handleCheckboxChange("isPlusOne", checked)}
                 label={rsvpTranslations[language].question2}
                 name="isPlusOne"
               />
@@ -145,12 +129,10 @@ const Registration = () => {
           </motion.div>
 
           <motion.div variants={inputVariants}>
-            <div className="flex flex-col lg:flex-row space-y-4 lg:space-x-7 lg:space-y-0 mb-2">
+            <div className="mb-2">
               <CustomCheckbox
                 checked={formData.isTransportNeeded}
-                onChange={(checked) =>
-                  setFormData((prevData) => ({ ...prevData, isTransportNeeded: checked }))
-                }
+                onChange={(checked) => handleCheckboxChange("isTransportNeeded", checked)}
                 label={rsvpTranslations[language].question5}
                 name="isTransportNeeded"
               />
@@ -158,60 +140,21 @@ const Registration = () => {
           </motion.div>
 
           <motion.div variants={inputVariants} className="flex flex-col space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0">
-            <CustomInput
-              label={rsvpTranslations[language].firstName}
-              type="text"
-              value={formData.firstName}
-              onChange={handleChange}
-              name="firstName"
-            />
-            <CustomInput
-              label={rsvpTranslations[language].lastName}
-              type="text"
-              value={formData.lastName}
-              onChange={handleChange}
-              name="lastName"
-            />
-            <CustomInput
-              label={rsvpTranslations[language].phone}
-              type="text"
-              value={formData.contactNumber}
-              onChange={handleChange}
-              name="contactNumber"
-            />
+            <CustomInput label={rsvpTranslations[language].firstName} type="text" value={formData.firstName} onChange={handleInputChange} name="firstName" />
+            <CustomInput label={rsvpTranslations[language].lastName} type="text" value={formData.lastName} onChange={handleInputChange} name="lastName" />
+            <CustomInput label={rsvpTranslations[language].phone} type="text" value={formData.contactNumber} onChange={handleInputChange} name="contactNumber" />
           </motion.div>
 
           <motion.div variants={inputVariants}>
-            <CustomInput
-              label={rsvpTranslations[language].question3}
-              type="text"
-              value={formData.allergy}
-              onChange={handleChange}
-              name="allergy"
-            />
+            <CustomInput label={rsvpTranslations[language].question3} type="text" value={formData.allergy} onChange={handleInputChange} name="allergy" />
           </motion.div>
 
           <motion.div variants={inputVariants}>
-            <CustomTextArea
-              label={rsvpTranslations[language].question4}
-              value={formData.message}
-              onChange={handleChange}
-              name="message"
-            />
+            <CustomTextArea label={rsvpTranslations[language].question4} value={formData.message} onChange={handleInputChange} name="message" />
           </motion.div>
-
+          
           <div className="flex justify-center">
-            <motion.button
-              type="submit"
-              className="px-6 py-2 bg-black text-white rounded hover:bg-sage"
-              whileHover={{ scale: 1.1 }}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: { opacity: 1, transition: { duration: 0.8, delay: 0.8 } },
-              }}
-            >
-              {rsvpTranslations[language].button}
-            </motion.button>
+            <motion.button type="submit" className="px-6 py-2 bg-black text-white rounded hover:bg-sage">{rsvpTranslations[language].button}</motion.button>
           </div>
         </form>
       </div>
