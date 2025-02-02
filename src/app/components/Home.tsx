@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { Link as ScrollLink } from "react-scroll";
-import Link from "next/link";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -38,8 +37,8 @@ const Home = () => {
   const fontClass = language === "Russian" || language === "Ukrainian" ? "font-greatvibes" : "font-windsong";
 
   return (
-    <section id="home" className="bg-white flex flex-col justify-center items-center pt-[80px]">
-      <motion.div className="w-screen h-[240px] lg:h-[640px] relative" variants={containerVariants}
+    <section id="home" className="bg-white flex flex-col justify-center items-center pt-[40px]">
+      <motion.div className="w-screen max-w-[2000px] h-[240px] lg:h-[640px] relative" variants={containerVariants}
         initial="hidden"
         animate="visible">
         <Image
@@ -75,7 +74,7 @@ const Home = () => {
       >
         <div className="flex flex-col space-y-10 max-w-5xl mx-auto justify-center items-center">
           <motion.div variants={textVariants} className="flex-1 text-center text-xl font-nunito mx-auto">
-            <p className="mb-5 lg:mb-10 text-xl lg:text-2xl max-w-3xl mx-auto">
+            <p className="mb-5 lg:mb-10 text-xl lg:text-2xl mx-auto">
               <strong>{homeTranslations[language].description}</strong>
             </p>
             <p className="text-lg lg:text-xl">{homeTranslations[language].description2}</p>
@@ -95,11 +94,14 @@ const Home = () => {
               ))}
             </motion.div>
             <div className="flex flex-col justify-center items-center lg:flex-row space-y-5 lg:space-x-5 lg:space-y-0">
-              <CustomButton
-              >
-                <Link href="https://www.google.com/maps/place/Hacienda+Acamilpa/">
+              <CustomButton>
+                <a
+                  href="https://www.google.com/maps/place/Hacienda+Acamilpa/@18.7166,-99.1606293,17z/data=!3m1!4b1!4m9!3m8!1s0x85ce78f3a55aee29:0xcc1f12d5c1e62b82!5m2!4m1!1i2!8m2!3d18.7166!4d-99.1606293!16s%2Fg%2F11b6btyr4m?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {homeTranslations[language].button1}
-                </Link>
+                </a>
               </CustomButton>
               <ScrollLink
                 to="rsvp"
@@ -110,7 +112,7 @@ const Home = () => {
                 <CustomButton>{homeTranslations[language].button2}*</CustomButton>
               </ScrollLink>
             </div>
-            <p className="mt-10 text-sm">{homeTranslations[language].note}</p>
+            <p className="mt-10">{homeTranslations[language].note}</p>
           </motion.div>
         </div>
       </motion.div>

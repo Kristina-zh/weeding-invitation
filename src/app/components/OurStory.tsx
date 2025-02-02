@@ -14,7 +14,7 @@ const OurStory = () => {
 
   const titleVariants = {
     hidden: { opacity: 0, scale: 1.2 },
-    visible: { opacity: 0.2, scale: 1, transition: { delay: 0.2, duration: 1 } },
+    visible: { opacity: 0.4, scale: 1, transition: { delay: 0.2, duration: 1 } },
   };
 
   const textVariants = {
@@ -44,7 +44,7 @@ const OurStory = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[100px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][1]}
       </motion.h2>

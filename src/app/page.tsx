@@ -16,7 +16,7 @@ const MainPage = () => {
   return (
     <LanguageProvider>
       <Header activeSection={activeSection} />
-      <main>
+      <main className="max-w-[2000px]">
         <Home />
         <OurStory />
         <WeddingDetails />

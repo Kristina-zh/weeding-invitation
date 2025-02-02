@@ -15,20 +15,23 @@ const Accommodations = () => {
       title: "Radisson Cuernavaca",
       description: `${accomodationTranslations[language].codeText}: 5015420`,
       image: "/images/hotel1.png",
+      distance: `${accomodationTranslations[language].distance}: 30 ${accomodationTranslations[language].mins}.`,
       link: "https://radissoncuernavaca.mx",
     },
-    // {
-    //   id: 2,
-    //   title: "Fiesta Americana",
-    //   description: accomodationTranslations[language].fiestaText,
-    //   image: "/images/hotel2.jpg",
-    //   link: "https://www.fiestamericanatravelty.com/fiesta-americana/hoteles/fiesta-americana-hacienda-san-antonio-el-puente-cuernavaca",
-    // },
+    {
+      id: 2,
+      title: "Fiesta Americana",
+      description: accomodationTranslations[language].fiestaText,
+      image: "/images/hotel2.jpg",
+      distance: `${accomodationTranslations[language].distance}: 40 ${accomodationTranslations[language].mins}.`,
+      link: "https://www.fiestamericanatravelty.com/fiesta-americana/hoteles/fiesta-americana-hacienda-san-antonio-el-puente-cuernavaca",
+    },
     {
       id: 3,
       title: "Fiesta Inn Cuernavaca",
       description: `${accomodationTranslations[language].codeText}: G1T8YR`,
       image: "/images/hotel3.jpg",
+      distance: `${accomodationTranslations[language].distance}: 45 ${accomodationTranslations[language].mins}.`,
       link: "https://www.fiestamericanatravelty.com/fiesta-inn/hoteles/fiesta-inn-cuernavaca",
     },
     {
@@ -36,6 +39,7 @@ const Accommodations = () => {
       title: "ONE hotel Cuernavaca",
       description: `${accomodationTranslations[language].codeText}: G1T8YU`,
       image: "/images/hotel4.jpg",
+      distance: `${accomodationTranslations[language].distance}: 45 ${accomodationTranslations[language].mins}.`,
       link: "https://www.fiestamericanatravelty.com/one-hoteles/hoteles/one-cuernavaca",
     },
   ];
@@ -47,7 +51,7 @@ const Accommodations = () => {
 
   const titleVariants = {
     hidden: { opacity: 0, scale: 1.2 },
-    visible: { opacity: 0.2, scale: 1, transition: { delay: 0.2, duration: 1 } },
+    visible: { opacity: 0.4, scale: 1, transition: { delay: 0.2, duration: 1 } },
   };
 
   const textVariants = {
@@ -77,12 +81,12 @@ const Accommodations = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[100px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][3]}
       </motion.h2>
 
-      <div className="max-w-xl lg:max-w-6xl mx-aut">
+      <div className="max-w-xl lg:max-w-6xl mx-auto">
         <motion.div
           variants={textVariants}
           className="flex flex-col space-y-5 max-w-4xl text-lg my-10 mx-auto text-center font-nunito">
@@ -91,7 +95,7 @@ const Accommodations = () => {
         </motion.div>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
             {hotels.map((hotel) => (
               <motion.div
                 key={hotel.id}
@@ -105,10 +109,12 @@ const Accommodations = () => {
                   height={380}
                   className="w-full h-48 object-cover"
                 />
-                <div className="p-5 flex flex-col h-[146px]">
+                <motion.div
+                  className="p-4 flex flex-col h-[200px]">
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold font-nunito mb-2">{hotel.title}</h3>
-                    <p className="text-gray-700 mb-4 font-nunito">{hotel.description}</p>
+                    <p className="text-gray-700 font-nunito">{hotel.description}</p>
+                    <p className="text-gray-700 mb-4 font-nunito">{hotel.distance}</p>
                   </div>
                   <Link
                     href={hotel.link}
@@ -118,7 +124,7 @@ const Accommodations = () => {
                   >
                     {accomodationTranslations[language].link}
                   </Link>
-                </div>
+                </motion.div>
               </motion.div>
 
             ))}

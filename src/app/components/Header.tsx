@@ -61,7 +61,7 @@ const Header = ({ activeSection }: HeaderProps) => {
 
   return (
     <motion.header
-      className="fixed top-0 w-full bg-white shadow-md z-50"
+      className="fixed top-0 w-full bg-white shadow-md z-50 max-w-[2000px]"
       initial={{ opacity: 0, scale: 1.2 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}

@@ -11,7 +11,7 @@ const CustomCheckbox: React.FC<CustomCheckboxProps> = ({ checked, onChange, labe
   };
 
   return (
-    <label className="flex items-center cursor-pointer select-none">
+    <label className="flex items-start cursor-pointer select-none">
       <input
         type="checkbox"
         className="hidden"
@@ -38,7 +38,7 @@ const CustomCheckbox: React.FC<CustomCheckboxProps> = ({ checked, onChange, labe
           </svg>
         )}
       </span>
-      {label && <span className="text-gray-800 font-nunito">{label}</span>}
+      {label && <span className="text-gray-800 font-nunito max-w-[260px] lg:max-w-[620px]">{label}</span>}
     </label>
   );
 };

@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer id="footer" className="h-[240px] lg:h-[540px] flex flex-col justify-center items-center"
     >
-      <div className="relative w-screen h-[240px] lg:h-[540px]">
+      <div className="relative w-screen max-w-[2000px] h-[240px] lg:h-[540px]">
         <Image
           src="/images/footer.jpg"
           alt="hero image"

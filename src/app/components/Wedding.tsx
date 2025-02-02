@@ -21,7 +21,7 @@ const Wedding = () => {
     {
       title: weddingTranslations[language][2].title,
       content: weddingTranslations[language][2].content,
-      image: "/images/color-palette.jpg"
+      image: "/images/dress-code.jpg"
     },
     {
       title: weddingTranslations[language][3].title,
@@ -36,7 +36,7 @@ const Wedding = () => {
     {
       title: weddingTranslations[language][5].title,
       content: weddingTranslations[language][5].content,
-      image: "/images/dress-code.jpg"
+      image: "/images/guests.jpg"
     },
   ];
 
@@ -47,7 +47,7 @@ const Wedding = () => {
 
   const titleVariants = {
     hidden: { opacity: 0, scale: 1.2 },
-    visible: { opacity: 0.2, scale: 1, transition: { delay: 0.2, duration: 1 } },
+    visible: { opacity: 0.4, scale: 1, transition: { delay: 0.2, duration: 1 } },
   };
 
   const fontClass = language === "Russian" || language === "Ukrainian" ? "font-greatvibes" : "font-windsong";
@@ -69,7 +69,7 @@ const Wedding = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[100px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][2]}
       </motion.h2>
@@ -92,7 +92,7 @@ const Wedding = () => {
 
             <div className="p-5 lg:px-10 lg:py-8 md:w-[75%] text-center md:text-left">
               <h3 className="text-2xl font-bold text-gray-800 mb-5">{detail.title}</h3>
-              <ul className="text-gray-600 space-y-3   tracking-wide">
+              <ul className="text-gray-600 space-y-3 tracking-wide">
                 {detail.content.map((desc, idx) => (
                   <li key={idx}>{desc}</li>
                 ))}

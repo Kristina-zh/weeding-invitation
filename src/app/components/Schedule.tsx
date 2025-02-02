@@ -2,7 +2,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { useLanguage } from "../context/LanguageContext";
-import { scheduleTranslations } from "../translations";
+import { eventsTranslations as scheduleTranslations } from "../translations";
 
 const Events = () => {
   const { language } = useLanguage();
