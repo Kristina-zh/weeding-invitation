@@ -14,7 +14,6 @@ const Registration = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    email: "",
     isJoining: false,
     isPlusOne: false,
     isTransportNeeded: false,
@@ -42,6 +41,7 @@ const Registration = () => {
     e.preventDefault();
 
     try {
+      // Send data to Telegram
       const telegramResponse = await fetch("/api/sendTelegram", {
         method: "POST",
         headers: {
@@ -56,22 +56,42 @@ const Registration = () => {
         return;
       }
 
+      // Send data to Google Sheets
+      const sheetResponse = await fetch("https://docs.google.com/spreadsheets/d/18uATXg_1nZGLqRea5eF0hXnwZpbY0ffNiDg5Fp4XmM0/edit?gid=260377606#gid=260377606", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const sheetResult = await sheetResponse.json();
+      console.log("Google Sheets Response:", sheetResult);
+
+      if (!sheetResponse.ok) {
+        alert(`Error saving data to Google Sheets: ${sheetResult.message || "Unknown error"}`);
+        return;
+      }
+
+      // Reset form after successful submissions
       setFormData({
         firstName: "",
         lastName: "",
-        email: "",
+        contactNumber: "",
         isJoining: false,
         isPlusOne: false,
         isTransportNeeded: false,
-        contactNumber: "",
         allergy: "",
         message: "",
       });
+
+      alert("Form submitted successfully!");
     } catch (error) {
       console.error(error);
       alert("An error occurred while submitting the form.");
     }
   };
+
 
   const inputVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -152,7 +172,6 @@ const Registration = () => {
           <motion.div variants={inputVariants}>
             <CustomTextArea label={rsvpTranslations[language].question4} value={formData.message} onChange={handleInputChange} name="message" />
           </motion.div>
-          
           <div className="flex justify-center">
             <motion.button type="submit" className="px-6 py-2 bg-black text-white rounded hover:bg-sage">{rsvpTranslations[language].button}</motion.button>
           </div>

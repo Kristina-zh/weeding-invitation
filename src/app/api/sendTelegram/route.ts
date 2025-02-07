@@ -11,6 +11,7 @@ export async function POST(req: Request) {
       email,
       isJoining,
       isPlusOne,
+      isTransportNeeded,
       contactNumber,
       allergy,
       message,
@@ -23,6 +24,7 @@ export async function POST(req: Request) {
       Email: ${email}
       Joining: ${isJoining ? 'Yes' : 'No'}
       Plus One: ${isPlusOne ? 'Yes' : 'No'}
+      Is Transport Needed: ${isTransportNeeded ? 'Yes' : 'No'}
       Contact Number: ${contactNumber}
       Allergy: ${allergy || 'None'}
       Message: ${message || 'None'}

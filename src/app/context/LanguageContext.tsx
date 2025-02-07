@@ -9,9 +9,9 @@ const flags = {
 
 export const menus = {
   English: ["Home", "Our Story", "Wedding Details", "Accommodation", "RSVP"],
-  Spanish: ["Inicio", "Nuestra Historia", "Cronograma", "Hospedaje", "Confirmar Asistencia"],
-  Russian: ["Главная", "Наша История", "Программа", "Проживание", "Регистрация"],
-  Ukrainian: ["Головна", "Наша Історія", "Програма", "Проживання", "Реєстрація"],
+  Spanish: ["Inicio", "Nuestra Historia", "Detalles de la Boda", "Hospedaje", "Confirmar Asistencia"],
+  Russian: ["Главная", "Наша История", "Детали Свадьбы", "Проживание", "Регистрация"],
+  Ukrainian: ["Головна", "Наша Історія", "Деталі Весілля", "Проживання", "Реєстрація"],
 };
 
 interface LanguageContextType {

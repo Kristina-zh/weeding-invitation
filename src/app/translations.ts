@@ -63,7 +63,7 @@ export const homeTranslations = {
   Spanish: {
     title: { kristina: 'Kristina', and: '&', alan: 'Alan' },
     description:
-      'Te invitamos a celebrar con nosotros el día más especial de nuestras vidas!',
+      'Te invitamos a celebrar con nosotros el día más especial de nuestras vidas',
     description2: '25 de Octubre 2025, 2:00pm',
     description3: 'Hacienda Acamilpa, Cuernavaca, México',
     button1: 'Cómo llegar',
@@ -134,10 +134,9 @@ export const weddingTranslations = {
       content: [
         '2:00 PM: Guest arrival',
         '3:00 PM: Ceremony',
-        '4:30 PM: Cocktail',
-        '6:30 PM: Dinner',
-        '9:00 PM: Party Starts',
-        '2:00 AM: The End',
+        '4:00 PM: Cocktail',
+        '5:30 PM: Dinner',
+        '8:00 PM: Party Starts',
       ],
     },
     {
@@ -186,23 +185,22 @@ export const weddingTranslations = {
       content: [
         '2:00 PM: Llegada de invitados',
         '3:00 PM: Ceremonia',
-        '4:30 PM: Cóctel',
-        '6:30 PM: Cena',
-        '9:00 PM: Fiesta',
-        '2:00 AM: Fin',
+        '4:00 PM: Cóctel',
+        '5:30 PM: Banquete',
+        '8:00 PM: Fiesta',
       ],
     },
     {
       title: 'Cómo llegar',
       content: [
-        'Ofrecemos transporte redondo  a la hacienda para los huéspedes que así lo requieran. Los puntos de encuentro unicamente serán en los hoteles Radisson y Fiesta Inn de Cuernavaca, así es que si no te estás hospedando en alguno de esos dos, por favor toma un taxi de tu hotel y llega a uno de estos hoteles.',
+        'Ofrecemos transporte redondo a la hacienda para los huéspedes que así lo requieran. Los puntos de encuentro únicamente serán en los hoteles Radisson y Fiesta Inn de Cuernavaca, así es que si no te estás hospedando en alguno de esos dos, puedes tomar un taxi de tu hotel para llegar a uno de estos hoteles.',
         'Los horarios específicos de partida se comunicarán más cerca de la fecha.',
       ],
     },
     {
       title: 'Código de vestimenta',
       content: [
-        'Por favor usa ropa formal, y te agradeceremos si usas algo que responda a los colores que tendremos en la boda. Puede ser un detalle, corbata, sombrero, pin, etc.',
+        'El código es formal. Si gustas, puedes usar una prenda que responda a la paleta de colores de nuestra boda',
         'Para algunas ideas, sigue este link: LINK',
       ],
     },
@@ -227,7 +225,7 @@ export const weddingTranslations = {
     {
       title: 'Solo Adultos',
       content: [
-        'Nos encantan los niños, pero en esta ocasión especial queremos que se tomen un momento para relajarse, disfrutar y disfrutar la celebración sin preocupaciones.',
+        'Nos encantan los niños, pero en esta ocasión especial queremos que se tomen un momento para relajarse.',
       ],
     },
   ],
@@ -237,10 +235,9 @@ export const weddingTranslations = {
       content: [
         '14:00: Прибытие гостей',
         '15:00: Церемония',
-        '16:30: Коктейль',
-        '18:30: Ужин',
-        '21:00: Начало вечеринки',
-        '02:00: Завершение',
+        '16:00: Коктейль',
+        '17:30: Ужин',
+        '20:00: Вечеринка!',
       ],
     },
     {
@@ -289,10 +286,9 @@ export const weddingTranslations = {
       content: [
         '14:00: Прибуття гостей',
         '15:00: Церемонія',
-        '16:30: Коктейль',
-        '18:30: Вечеря',
-        '21:00: Початок вечірки',
-        '02:00: Завершення',
+        '16:00: Коктейль',
+        '17:30: Вечеря',
+        '20:00: Вечірка!',
       ],
     },
     {
@@ -545,7 +541,7 @@ export const eventsTranslations = {
       time: '2 PM',
       title: 'Transporte a Hoteles en Cuernavaca',
       description: [
-        'Se proporcionará transporte para los invitados internacionales desde un punto de recogida en Polanco. El shuttle los llevará a su hotel en Cuernavaca, a 2 horas de distancia.',
+        'Habrá transporte para los invitados internacionales desde un punto de recogida en Polanco. El shuttle los llevará a su hotel en Cuernavaca, a 2 horas de distancia.',
         'Se proporcionarán más detalles por separado.',
       ],
       dresscode: '',
