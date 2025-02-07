@@ -132,7 +132,7 @@ export const weddingTranslations = {
     {
       title: 'Schedule',
       content: [
-        '2:00 PM: Guest arrival',
+        '2:30 PM: Guest arrival',
         '3:00 PM: Ceremony',
         '4:00 PM: Cocktail',
         '5:30 PM: Dinner',
@@ -183,7 +183,7 @@ export const weddingTranslations = {
     {
       title: 'Cronograma',
       content: [
-        '2:00 PM: Llegada de invitados',
+        '2:30 PM: Llegada de invitados',
         '3:00 PM: Ceremonia',
         '4:00 PM: Cóctel',
         '5:30 PM: Banquete',
@@ -233,7 +233,7 @@ export const weddingTranslations = {
     {
       title: 'Расписание',
       content: [
-        '14:00: Прибытие гостей',
+        '14:30: Прибытие гостей',
         '15:00: Церемония',
         '16:00: Коктейль',
         '17:30: Ужин',
@@ -284,7 +284,7 @@ export const weddingTranslations = {
     {
       title: 'Розклад',
       content: [
-        '14:00: Прибуття гостей',
+        '14:30: Прибуття гостей',
         '15:00: Церемонія',
         '16:00: Коктейль',
         '17:30: Вечеря',
