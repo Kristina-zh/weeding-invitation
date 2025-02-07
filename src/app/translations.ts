@@ -135,7 +135,7 @@ export const weddingTranslations = {
         '2:30 PM: Guest arrival',
         '3:00 PM: Ceremony',
         '4:00 PM: Cocktail',
-        '5:30 PM: Dinner',
+        '5:30 PM: Reception',
         '8:00 PM: Party Starts',
       ],
     },
