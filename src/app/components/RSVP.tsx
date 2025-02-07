@@ -2,15 +2,22 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+import Modal from "./ui/Modal";
 import CustomInput from "./ui/CustomInput";
 import CustomTextArea from "./ui/CustomTextArea";
 import CustomCheckbox from "./ui/CustomCheckbox";
 import { useLanguage } from "../context/LanguageContext";
 import { rsvpTranslations } from "../translations";
 
+interface FormErrors {
+  firstName?: string;
+  lastName?: string;
+  contactNumber?: string;
+  isJoining?: string;
+}
+
 const Registration = () => {
   const { language, menus } = useLanguage();
-
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -21,6 +28,19 @@ const Registration = () => {
     allergy: "",
     message: "",
   });
+  const [errors, setErrors] = useState<FormErrors>({});
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const validateForm = () => {
+    const newErrors: FormErrors = {};
+
+    if (!formData.firstName) newErrors.firstName = "First name is required.";
+    if (!formData.lastName) newErrors.lastName = "Last name is required.";
+    if (!formData.contactNumber) newErrors.contactNumber = "Phone number is required.";
+    if (!formData.isJoining) newErrors.isJoining = "Please confirm your attendance.";
+    return newErrors;
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -40,6 +60,15 @@ const Registration = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const newErrors = validateForm();
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    setErrors({});
+    setIsLoading(true);
+
     try {
       // Send data to Telegram
       const telegramResponse = await fetch("/api/sendTelegram", {
@@ -56,23 +85,27 @@ const Registration = () => {
         return;
       }
 
-      // Send data to Google Sheets
-      const sheetResponse = await fetch("https://docs.google.com/spreadsheets/d/18uATXg_1nZGLqRea5eF0hXnwZpbY0ffNiDg5Fp4XmM0/edit?gid=260377606#gid=260377606", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+      // Append data to Google Sheets
+      const newRow = {
+        FirstName: formData.firstName,
+        LastName: formData.lastName,
+        Phone: formData.contactNumber,
+        IsJoining: formData.isJoining ? "yes" : "no",
+        HasPlusOne: formData.isPlusOne ? "yes" : "no",
+        IsTransportNeeded: formData.isTransportNeeded ? "yes" : "no",
+        Allergies: formData.allergy === "" ? "-" : formData.allergy,
+        Message: formData.message === "" ? "-" : formData.message,
+      };
+      const response = await fetch('/api/appendRow', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newRow),
       });
 
-      const sheetResult = await sheetResponse.json();
-      console.log("Google Sheets Response:", sheetResult);
+      const result = await response.json();
+      console.log(result);
 
-      if (!sheetResponse.ok) {
-        alert(`Error saving data to Google Sheets: ${sheetResult.message || "Unknown error"}`);
-        return;
-      }
-
+      setIsSubmitted(true);
       // Reset form after successful submissions
       setFormData({
         firstName: "",
@@ -85,10 +118,11 @@ const Registration = () => {
         message: "",
       });
 
-      alert("Form submitted successfully!");
     } catch (error) {
       console.error(error);
       alert("An error occurred while submitting the form.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -122,6 +156,13 @@ const Registration = () => {
         },
       }}
     >
+      {isSubmitted && (
+        <Modal isOpen={isSubmitted} onClose={() => setIsSubmitted(false)} title={rsvpTranslations[language].modalTitle}>
+          <p className="font-xl mb-5">{rsvpTranslations[language].modalText}</p>
+        </Modal>
+      )}
+
+
       <motion.h2 variants={titleVariants} className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][4]}
@@ -159,9 +200,20 @@ const Registration = () => {
           </motion.div>
 
           <motion.div variants={inputVariants} className="flex flex-col space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0">
-            <CustomInput label={rsvpTranslations[language].firstName} type="text" value={formData.firstName} onChange={handleInputChange} name="firstName" />
-            <CustomInput label={rsvpTranslations[language].lastName} type="text" value={formData.lastName} onChange={handleInputChange} name="lastName" />
-            <CustomInput label={rsvpTranslations[language].phone} type="text" value={formData.contactNumber} onChange={handleInputChange} name="contactNumber" />
+            <div className="w-full">
+              <CustomInput label={rsvpTranslations[language].firstName} type="text" value={formData.firstName} onChange={handleInputChange} name="firstName" error={!!errors.firstName} />
+              {errors.firstName && <p className="text-red-500 text-sm ml-3 font-nunito">{errors.firstName}</p>}
+            </div>
+
+            <div className="w-full">
+              <CustomInput label={rsvpTranslations[language].lastName} type="text" value={formData.lastName} onChange={handleInputChange} name="lastName" error={!!errors.lastName} />
+              {errors.lastName && <p className="text-red-500 text-sm ml-3 font-nunito">{errors.lastName}</p>}
+            </div>
+
+            <div className="w-full">
+              <CustomInput label={rsvpTranslations[language].phone} type="text" value={formData.contactNumber} onChange={handleInputChange} name="contactNumber" error={!!errors.contactNumber} />
+              {errors.contactNumber && <p className="text-red-500 text-sm ml-3 font-nunito">{errors.contactNumber}</p>}
+            </div>
           </motion.div>
 
           <motion.div variants={inputVariants}>
@@ -172,7 +224,7 @@ const Registration = () => {
             <CustomTextArea label={rsvpTranslations[language].question4} value={formData.message} onChange={handleInputChange} name="message" />
           </motion.div>
           <div className="flex justify-center">
-            <motion.button type="submit" className="px-6 py-2 bg-black text-white rounded hover:bg-sage">{rsvpTranslations[language].button}</motion.button>
+            <motion.button type="submit" className="px-6 py-2 bg-black text-white rounded hover:bg-sage">{isLoading ? rsvpTranslations[language].loading : rsvpTranslations[language].button}</motion.button>
           </div>
         </form>
       </div>

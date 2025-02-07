@@ -1,10 +1,12 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
         ...config.resolve.fallback,
+        events: false, 
+        crypto: false,
         fs: false,
         tls: false,
         net: false,
@@ -12,9 +14,6 @@ const nextConfig: NextConfig = {
       };
     }
     return config;
-  },
-  env: {
-    GOOGLE_SERVICE_PRIVATE_KEY: process.env.GOOGLE_SERVICE_PRIVATE_KEY,
   },
 };
 
