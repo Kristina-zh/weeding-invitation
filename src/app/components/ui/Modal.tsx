@@ -11,9 +11,8 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
+  const { language } = useLanguage();
   if (!isOpen) return null;
-
-  const { language, menus } = useLanguage();
 
   return (
     <div className="fixed inset-0 flex items-center text-center justify-center bg-black bg-opacity-50 z-50 font-nunito">
