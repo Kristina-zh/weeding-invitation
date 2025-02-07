@@ -9,6 +9,7 @@ import CustomCheckbox from "./ui/CustomCheckbox";
 import { useLanguage } from "../context/LanguageContext";
 import { rsvpTranslations } from "../translations";
 
+console.log("HELLO!")
 interface FormErrors {
   firstName?: string;
   lastName?: string;
