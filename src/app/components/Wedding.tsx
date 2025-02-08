@@ -21,7 +21,9 @@ const Wedding = () => {
     {
       title: weddingTranslations[language][2].title,
       content: weddingTranslations[language][2].content,
-      image: "/images/dress-code.jpg"
+      image: "/images/dress-code.jpg",
+      linkTitle: weddingTranslations[language][2].link,
+      link: "https://pin.it/7va9n6Edx"
     },
     {
       title: weddingTranslations[language][3].title,
@@ -93,9 +95,23 @@ const Wedding = () => {
             <div className="p-5 lg:px-10 lg:py-8 md:w-[75%] text-center md:text-left">
               <h3 className="text-2xl font-bold text-gray-800 mb-5">{detail.title}</h3>
               <ul className="text-gray-600 space-y-3 tracking-wide">
-                {detail.content.map((desc, idx) => (
+                {detail.content.slice(0, -1).map((desc, idx) => (
                   <li key={idx}>{desc}</li>
                 ))}
+
+                <li className="flex justify-start items-center">
+                  <span>{detail.content[detail.content.length - 1]}</span>
+                  {detail.link && (
+                    <a
+                      href={detail.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-sage underline font-semibold ml-2"
+                    >
+                      {detail.linkTitle}
+                    </a>
+                  )}
+                </li>
               </ul>
             </div>
 

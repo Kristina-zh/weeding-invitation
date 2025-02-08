@@ -2,20 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #bcd3c5;
-  --foreground: #171717;
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+html,
+body {
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
 
 body {
   color: var(--foreground);
-  background: "white";
+  background: 'white';
   font-family: 'Poppins', 'WindSong', 'PoiretOne', 'RougeScript', sans-serif;
 }

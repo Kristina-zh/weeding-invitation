@@ -37,24 +37,6 @@ const Header = ({ activeSection }: HeaderProps) => {
     setIsLanguageSwitcherOpen(false)
   };
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(event.target as Node) &&
-        buttonRef.current &&
-        !buttonRef.current.contains(event.target as Node)
-      ) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
   const englishLinks = menus.English;
 
   const fontClass = language === "Russian" || language === "Ukrainian" ? "font-greatvibes" : "font-windsong";
@@ -178,6 +160,7 @@ const Header = ({ activeSection }: HeaderProps) => {
                       smooth={true}
                       duration={500}
                       offset={-70}
+                      onClick={() => setIsMenuOpen(false)}
                       className="block text-lg text-black hover:text-green-700 transition"
                     >
                       {item}
@@ -227,7 +210,7 @@ const Header = ({ activeSection }: HeaderProps) => {
           </ul>
         )}
       </nav>
-    </motion.header>
+    </motion.header >
   );
 };
 

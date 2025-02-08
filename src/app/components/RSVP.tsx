@@ -13,6 +13,7 @@ interface FormErrors {
   lastName?: string;
   contactNumber?: string;
   isJoining?: string;
+  allergy?: string
 }
 
 const Registration = () => {
@@ -34,10 +35,11 @@ const Registration = () => {
   const validateForm = () => {
     const newErrors: FormErrors = {};
 
-    if (!formData.firstName) newErrors.firstName = "First name is required.";
-    if (!formData.lastName) newErrors.lastName = "Last name is required.";
-    if (!formData.contactNumber) newErrors.contactNumber = "Phone number is required.";
-    if (!formData.isJoining) newErrors.isJoining = "Please confirm your attendance.";
+    if (!formData.firstName) newErrors.firstName = rsvpTranslations[language].firstNameIsRequired;
+    if (!formData.lastName) newErrors.lastName = rsvpTranslations[language].lastNameIsRequired;
+    if (!formData.contactNumber) newErrors.contactNumber = rsvpTranslations[language].phoneIsRequired;
+    if (!formData.isJoining) newErrors.isJoining = rsvpTranslations[language].isJoiningIsRequired;
+    if (!formData.allergy) newErrors.allergy = rsvpTranslations[language].allergiesIsRequired;
     return newErrors;
   };
 
@@ -162,7 +164,7 @@ const Registration = () => {
       )}
 
 
-      <motion.h2 variants={titleVariants} className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[80px] text-gray-500 ${fontClass}`}
+      <motion.h2 variants={titleVariants} className={`absolute top-0 pr-5 right-0 lg:right-10 text-[36px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][4]}
       </motion.h2>
@@ -215,8 +217,9 @@ const Registration = () => {
             </div>
           </motion.div>
 
-          <motion.div variants={inputVariants}>
+          <motion.div className="w-full" variants={inputVariants}>
             <CustomInput label={rsvpTranslations[language].question3} type="text" value={formData.allergy} onChange={handleInputChange} name="allergy" />
+            {errors.allergy && <p className="text-red-500 text-sm ml-3 font-nunito">{errors.allergy}</p>}
           </motion.div>
 
           <motion.div variants={inputVariants}>
