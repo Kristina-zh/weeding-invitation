@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 import { motion } from "framer-motion";
