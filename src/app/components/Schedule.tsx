@@ -87,9 +87,9 @@ const Events = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[27px] lg:text-[100px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[27px] sm:text-[40px] lg:text-[100px] text-gray-500 ${fontClass}`}
       >
-        Schedule
+        Events
       </motion.h2>
 
       <div className="grid grid-cols-1 gap-10 max-w-xl lg:max-w-3xl my-10 lg:my-0">
