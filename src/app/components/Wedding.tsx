@@ -115,7 +115,7 @@ const Wedding = () => {
                   );
                 })}
 
-                <li className="flex items-center">
+                <li className="flex justify-center lg:justify-start items-center">
                   <p>
                     {detail.content[detail.content.length - 1]}
                     {detail.link && (

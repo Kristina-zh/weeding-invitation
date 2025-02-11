@@ -85,17 +85,17 @@ export const ourStoryTranslations = {
     description1:
       'We met in Kyiv back in 2015 through mutual friends. After six years of long distance between London and Kyiv, as well as exploring lots of the world together, we finally decided it was time for a change and moved to incredible Mexico. And here we are, happier than ever, ready for the next chapter.',
     description2:
-      "But things have changed. Now there are three of us, and we couldn't be happier. Our son, Alexander, joined us in 2022, keeping us on our toes and making sure life is never boring.",
+      "But things have changed. Now there are three of us. Our son, Alexander, joined us in 2022, keeping us on our toes and making sure life is never boring.",
     description3:
       'This year marks a decade of us being together! And what better way to celebrate than by gathering all the people we love in one place?',
   },
   Spanish: {
     description1:
-      'Nos conocimos en Kyiv en 2015 a través de amigos en común. Después de seis años de relación a distancia entre Londres y Kyiv, y de explorar gran parte del mundo juntos, finalmente decidimos que era momento de un cambio y nos mudamos a la increíble México. Y aquí estamos, más felices que nunca y listos para el siguiente capítulo.',
+      'Nos conocimos en Kyiv en el 2015 por medio de amigos en común. Después de seis años de relación a distancia entre Londres y Kyiv, y de explorar gran parte del mundo juntos, finalmente decidimos que era momento de un cambio y nos mudamos a México. Ahora estamos listos para el siguiente capítulo juntos.',
     description2:
-      'Pero la vida ha cambiado. Ahora somos tres, y no podríamos estar más felices. Nuestro hijo, Alexander, llegó en 2022 y nos ha cambiado nuestras vidas de una forma increíble.',
+      'Hoy ya somos tres y no podríamos estar más felices. Nuestro hijo, Alexander, llegó en 2022 y nos ha cambiado nuestras vidas de una forma increíble.',
     description3:
-      '¡Este año celebramos 10 años juntos! ¿Y qué mejor manera de festejarlo que reuniendo a todas las personas que amamos en un solo lugar?',
+      '¡Este año celebramos 10 años juntos! Y qué mejor manera de festejarlo que reuniendo a todas las personas que amamos en un solo lugar',
   },
   Russian: {
     description1:
@@ -192,7 +192,7 @@ export const weddingTranslations = {
     {
       title: 'Código de vestimenta',
       content: [
-        'El código es formal.',
+        'El código es formal (trajes para hombres y vestidos para mujeres)',
         'Si gustas, puedes encontrar nuestras guías de colores y algo de inspiración aquí:',
       ],
       link: 'LINK',
@@ -218,7 +218,7 @@ export const weddingTranslations = {
     {
       title: 'Solo Adultos',
       content: [
-        'Nos encantan los niños, pero en esta ocasión especial queremos que se tomen un momento para relajarse.',
+        'Nos encantan los niños, pero en esta ocasión especial queremos que te tomes un momento para relajarte.',
       ],
     },
   ],
@@ -521,7 +521,7 @@ export const eventsTranslations = {
       time: '2 PM, Pick up point in Polanco',
       title: 'Transport to Cuernavaca Hotels',
       description: [
-        'Transport will be provided for international guests from a single pickup point in Polanco. The shuttle will take you to your Cuernavaca hotel, 2 hours away.',
+        'Transport will be provided for international guests from a single pickup point in Polanco. The shuttle will take you to your Cuernavaca hotel (Radisson, Fiesta Inn or One), 2 hours away.',
         'Further details will be provided separately.',
       ],
       dresscode: '',
@@ -531,7 +531,7 @@ export const eventsTranslations = {
       time: '7 PM',
       title: 'The Night Before',
       description: [
-        'Once you’re in Cuernavaca and checked in, you’ll be picked up by a shuttle from your hotels and taken to the Hacienda for canapés & drinks at 7 PM.',
+        'Once you’re in Cuernavaca and checked in, please take a taxi from your hotels and head to the Hacienda for canapés & drinks at 7 PM.',
       ],
       dresscode: '',
     },
@@ -540,11 +540,11 @@ export const eventsTranslations = {
       time: '',
       title: 'The Wedding',
       description: [
-        '2:00 PM: Guest arrival',
+        '2:30 PM: Guest arrival',
         '3:00 PM: Ceremony',
-        '3:30 PM: Cocktail',
-        '6:00 PM: Dinner',
-        '9:00 PM: Party',
+        '4:00 PM: Cocktail',
+        '5:30 PM: Banquet',
+        '8:00 PM: Party starts',
         '2:00 AM: The end',
       ],
       dresscode: 'Formal Attire',
@@ -554,7 +554,7 @@ export const eventsTranslations = {
       time: '12:30 PM',
       title: 'Return to Mexico City',
       description: [
-        'Transport back to Mexico City will leave at 12:30pm on Sunday from the Radisson and Fiesta Inn hotels.',
+        'Transport back to Mexico City will leave at 12:30pm on Sunday from the Radisson, Fiesta Inn and One hotels.',
       ],
       dresscode: '',
     },
