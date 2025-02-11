@@ -52,7 +52,7 @@ const OurStory = () => {
       <div className="flex flex-col lg:flex-row max-w-xl lg:max-w-4xl mx-auto justify-center items-center">
         <motion.div
           variants={videoVariants}
-          className="max-w-[300px] flex-1 justify-center items-center overflow-hidden relative h-[320px] lg:h-[480px] my-5 lg:my-0"
+          className="max-w-[280px] flex-1 justify-center items-center overflow-hidden relative h-[320px] lg:h-[480px] my-5 lg:my-0"
         >
           <video
             src="/images/us_animation.mp4"

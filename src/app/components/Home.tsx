@@ -86,7 +86,7 @@ const Home = () => {
       </motion.div>
       <motion.div
         id="invitation"
-        className="max-w-xl w-screen bg-white p-8 lg:p-16 h-full flex items-center justify-center relative"
+        className="lg:max-w-xl w-screen bg-white p-8 lg:p-16 h-full flex items-center justify-center relative"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}

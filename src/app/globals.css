@@ -4,12 +4,18 @@
 
 html,
 body {
-  overflow: auto !important;
+  overflow-x: hidden !important;
   -webkit-overflow-scrolling: touch;
+  max-width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   color: var(--foreground);
+  position: relative;
   background: 'white';
   font-family: 'Poppins', 'WindSong', 'PoiretOne', 'RougeScript', sans-serif;
 }
