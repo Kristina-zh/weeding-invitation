@@ -85,7 +85,7 @@ export const ourStoryTranslations = {
     description1:
       'We met in Kyiv back in 2015 through mutual friends. After six years of long distance between London and Kyiv, as well as exploring lots of the world together, we finally decided it was time for a change and moved to incredible Mexico. And here we are, happier than ever, ready for the next chapter.',
     description2:
-      "But things have changed. Now there are three of us. Our son, Alexander, joined us in 2022, keeping us on our toes and making sure life is never boring.",
+      'But things have changed. Now there are three of us. Our son, Alexander, joined us in 2022, keeping us on our toes and making sure life is never boring.',
     description3:
       'This year marks a decade of us being together! And what better way to celebrate than by gathering all the people we love in one place?',
   },
@@ -101,7 +101,7 @@ export const ourStoryTranslations = {
     description1:
       'Мы познакомились в Киеве в 2015 году благодаря общим друзьям. После шести лет отношений на расстоянии между Лондоном и Киевом и множества совместных путешествий по миру мы решили, что пора что-то менять, и переехали в потрясающую Мексику. И вот мы здесь — счастливее, чем когда-либо, и готовы к следующей главе.',
     description2:
-      'Но жизнь изменилась. Теперь нас теперь трое. Наш сын Александр появился в 2022 году, держит нас в тонусе и не даёт скучать.',
+      'Но жизнь изменилась. Теперь нас трое. Наш сын Александр появился в 2022 году, держит нас в тонусе и не даёт скучать.',
     description3:
       'В этом году исполняется 10 лет, как мы вместе! И какой может быть лучший способ отпраздновать это, чем собрать всех, кого мы любим, в одном месте?',
   },
@@ -228,7 +228,7 @@ export const weddingTranslations = {
       content: [
         '14:30: Прибытие гостей',
         '15:00: Церемония',
-        '16:00: Коктейль',
+        '16:00: Коктейли',
         '17:30: Ужин',
         '20:00: Вечеринка!',
       ],
@@ -282,7 +282,7 @@ export const weddingTranslations = {
       content: [
         '14:30: Прибуття гостей',
         '15:00: Церемонія',
-        '16:00: Коктейль',
+        '16:00: Коктейлі',
         '17:30: Вечеря',
         '20:00: Вечірка!',
       ],
@@ -371,7 +371,7 @@ export const accomodationTranslations = {
     fiestaText: 'Код не требуется, уточняйте наличие номеров напрямую.',
     link: 'Посетить отель',
     generalText:
-      'Пожалуйста, отправьте сообщение в WhatsApp в выбранный вами отель, указав код бронирования, даты пребывания (пятница, 24 октября – воскресенье, 26 октября) и название мероприятия (Свадьба Кристины и Алана). Вам отправят ссылку для оплаты.',
+      "Пожалуйста, отправьте сообщение в WhatsApp в выбранный вами отель, указав код бронирования, даты пребывания (пятница, 24 октября – воскресенье, 26 октября) и название мероприятия (Kristina & Alan's wedding). Вам отправят ссылку для оплаты.",
   },
   Ukrainian: {
     description1:
@@ -384,7 +384,7 @@ export const accomodationTranslations = {
     fiestaText: 'Код не потрібен, перевірте доступність напряму.',
     link: 'Переглянути готель',
     generalText:
-      'Будь ласка, надішліть повідомлення в WhatsApp до обраного вами готелю, вказавши код бронювання, дати перебування (п’ятниця, 24 жовтня – неділя, 26 жовтня) та назву події (Весілля Крістіни та Алана). Вам нададуть посилання для оплати.',
+      "Будь ласка, надішліть повідомлення в WhatsApp до обраного вами готелю, вказавши код бронювання, дати перебування (п’ятниця, 24 жовтня – неділя, 26 жовтня) та назву події (Kristina & Alan's wedding). Вам нададуть посилання для оплати.",
   },
 };
 
