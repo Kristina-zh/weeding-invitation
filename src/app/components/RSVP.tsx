@@ -171,9 +171,9 @@ const Registration = () => {
 
       <div className="md:w-[80%] max-w-[760px] mx-auto p-5 lg:p-7 bg-white bg-opacity-80 rounded-lg shadow-custom my-10 lg:my-0">
         <p className="text-2xl mb-6 text-center font-nunito font-bold">{rsvpTranslations[language].title}</p>
-        <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-5 flex flex-col">
+        <form onSubmit={handleSubmit} className="space-y-2   flex flex-col">
           <motion.div variants={inputVariants}>
-            <div className="flex flex-col lg:flex-row space-y-4 lg:space-x-7 lg:space-y-0">
+            <div className="flex flex-col lg:flex-row space-y-2 lg:space-x-5 lg:space-y-0 mb-2">
               <CustomCheckbox
                 checked={formData.isJoining}
                 onChange={(checked) => handleCheckboxChange("isJoining", checked)}
