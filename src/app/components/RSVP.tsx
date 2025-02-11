@@ -164,7 +164,7 @@ const Registration = () => {
       )}
 
 
-      <motion.h2 variants={titleVariants} className={`absolute top-0 pr-5 right-0 lg:right-10 text-[36px] lg:text-[80px] text-gray-500 ${fontClass}`}
+      <motion.h2 variants={titleVariants} className={`absolute top-0 pr-2 right-0 lg:right-10 text-[27px] sm:text-[38px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][4]}
       </motion.h2>

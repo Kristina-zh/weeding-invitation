@@ -19,6 +19,10 @@ export default {
       boxShadow: {
         custom: '0px 8px 20px rgba(0, 0, 0, 0.35)',
       },
+      screens: {
+        'sm': '360px',
+        'xl': '2000px',
+      },
     },
   },
   plugins: [],

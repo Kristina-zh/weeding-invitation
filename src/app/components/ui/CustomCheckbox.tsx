@@ -38,7 +38,7 @@ const CustomCheckbox: React.FC<CustomCheckboxProps> = ({ checked, onChange, labe
           </svg>
         )}
       </span>
-      {label && <span className="text-gray-800 font-nunito max-w-[260px] lg:max-w-[620px]">{label}</span>}
+      {label && <span className="text-gray-800 font-nunito max-w-[80%] lg:max-w-[90%]">{label}</span>}
     </label>
   );
 };

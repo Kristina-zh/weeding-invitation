@@ -71,7 +71,7 @@ const Wedding = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[30px] lg:text-[80px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-2 right-0 lg:right-10 text-[27px] sm:text-[38px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][2]}
       </motion.h2>
@@ -115,7 +115,7 @@ const Wedding = () => {
                   );
                 })}
 
-                <li className="flex justify-center items-center">
+                <li className="flex items-center">
                   <p>
                     {detail.content[detail.content.length - 1]}
                     {detail.link && (

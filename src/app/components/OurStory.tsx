@@ -44,7 +44,7 @@ const OurStory = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[30px] lg:text-[80px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-3 right-0 lg:right-10 text-[27px] sm:text-[38px] lg:text-[80px] text-gray-600 ${fontClass}`}
       >
         {menus[language][1]}
       </motion.h2>
@@ -66,7 +66,7 @@ const OurStory = () => {
 
         <motion.div
           variants={textVariants}
-          className="flex-1 text-center space-y-5 lg:text-lg lg:mt-2 lg:pl-20 mx-auto font-nunito"
+          className="flex-1 text-center space-y-5 sm:text-lg lg:mt-2 lg:pl-20 mx-auto font-nunito"
         >
           <p>
             {ourStoryTranslations[language].description1}

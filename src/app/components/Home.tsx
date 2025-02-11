@@ -62,7 +62,7 @@ const Home = () => {
         />
         <motion.h1
           variants={textVariants}
-          className={`text-[40px] md:text-[60px] lg:text-[120px] text-center mt-4 ${fontClass} absolute bottom-[0] lg:bottom-[10%] left-[-50px] leading-none`}
+          className={`text-[40px] md:text-[60px] lg:text-[120px] xl:text-[140px] text-center mt-4 ${fontClass} absolute bottom-[0] lg:bottom-[10%] left-[-50px] xl:left-[100px] leading-none`}
         >
           <span className="block">{homeTranslations[language].title.kristina}</span>
           <span className="block ml-[180px] md:ml-[320px] lg:ml-[400px]">{homeTranslations[language].title.and} {homeTranslations[language].title.alan}</span>
@@ -141,7 +141,7 @@ const Home = () => {
                 <CustomButton>{homeTranslations[language].button2}*</CustomButton>
               </ScrollLink>
             </div>
-            <p className="mt-10 text-sm md:text-md px-5">{homeTranslations[language].note}</p>
+            <p className="mt-10 text-sm lg:text-lg sm:text-md px-5">{homeTranslations[language].note}</p>
           </motion.div>
         </div>
       </motion.div>

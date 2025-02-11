@@ -7,7 +7,7 @@ interface CustomButtonProps {
 
 const CustomButton: React.FC<CustomButtonProps> = ({ onClick, children }) => {
   return <motion.button
-    className="px-6 py-2 bg-black text-white rounded hover:bg-sage"
+    className="px-6 py-2 bg-black text-white rounded hover:bg-sage max-w-[310px]"
     whileHover={{ scale: 1.1 }}
     variants={{
       hidden: { opacity: 0 },

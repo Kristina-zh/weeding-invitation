@@ -50,8 +50,8 @@ const Header = ({ activeSection }: HeaderProps) => {
     >
       <nav>
         <div className="max-w-xl lg:max-w-6xl mx-auto flex justify-between items-center">
-          <div className="h-[80px] w-[220px] lg:w-[240px] relative">
-            <p className="text-sm font-nunito absolute top-1 ml-[26px] lg:ml-0">{headerTranslations[language].countdownText}:</p>
+          <div className="h-[80px] w-[220px] sm:w-[280px] lg:w-[240px] relative">
+            <p className="text-sm font-nunito absolute top-1 ml-[26px] sm:ml-[42px] lg:ml-0">{headerTranslations[language].countdownText}:</p>
             <div className="ml-[-40px] lg:ml-[-85px] mt-2 lg:mt-0">
               <Timer date="2025-10-25T14:00:00" />
             </div>

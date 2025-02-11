@@ -87,7 +87,7 @@ const Events = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[100px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[27px] lg:text-[100px] text-gray-500 ${fontClass}`}
       >
         Schedule
       </motion.h2>

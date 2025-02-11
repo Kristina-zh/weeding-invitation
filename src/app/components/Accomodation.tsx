@@ -70,7 +70,7 @@ const Accommodations = () => {
       className="relative bg-sage p-5 lg:p-20 h-full flex items-center justify-center"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={{
         hidden: { opacity: 0 },
         visible: {
@@ -84,7 +84,7 @@ const Accommodations = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[30px] lg:text-[80px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[27px] sm:text-[38px] lg:text-[80px] text-gray-600 ${fontClass}`}
       >
         {menus[language][3]}
       </motion.h2>
@@ -92,7 +92,7 @@ const Accommodations = () => {
       <div className="max-w-xl lg:max-w-6xl mx-auto">
         <motion.div
           variants={textVariants}
-          className="flex flex-col space-y-5 max-w-4xl text-lg my-10 mx-auto text-center font-nunito">
+          className="flex flex-col space-y-5 max-w-4xl text-lg sm:text-xl lg:text-lg my-10 mx-auto text-center font-nunito">
           <p>{accomodationTranslations[language].description1}</p>
           <p>{accomodationTranslations[language].description2}</p>
         </motion.div>
@@ -125,7 +125,7 @@ const Accommodations = () => {
                     href={hotel.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-500 hover:text-blue-700 underline font-nunito mt-auto"
+                    className="mt-2 text-blue-500 hover:text-blue-700 underline font-nunito lg:mt-auto"
                   >
                     {accomodationTranslations[language].link}
                   </Link>
