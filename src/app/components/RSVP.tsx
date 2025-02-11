@@ -200,7 +200,7 @@ const Registration = () => {
             </div>
           </motion.div>
 
-          <motion.div variants={inputVariants} className="flex flex-col space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0">
+          <motion.div variants={inputVariants} className="flex flex-col space-y-2 lg:flex-row lg:space-x-4 lg:space-y-0">
             <div className="w-full">
               <CustomInput label={rsvpTranslations[language].firstName} type="text" value={formData.firstName} onChange={handleInputChange} name="firstName" error={!!errors.firstName} />
               {errors.firstName && <p className="text-red-500 text-sm ml-3 font-nunito">{errors.firstName}</p>}

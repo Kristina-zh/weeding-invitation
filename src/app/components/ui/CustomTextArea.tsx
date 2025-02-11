@@ -15,7 +15,7 @@ const CustomTextArea: React.FC<CustomTextAreaProps> = ({
 }) => {
   return (
     <div className="relative w-full">
-      <label className="absolute -top-3 left-3 text-sm text-gray-600 bg-white px-1 font-nunito">
+      <label className="text-sm bg-white px-1 font-nunito text-gray-600">
         {label}
       </label>
       <textarea

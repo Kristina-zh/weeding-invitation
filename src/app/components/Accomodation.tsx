@@ -92,7 +92,7 @@ const Accommodations = () => {
       <div className="max-w-xl lg:max-w-6xl mx-auto">
         <motion.div
           variants={textVariants}
-          className="flex flex-col space-y-5 max-w-4xl text-lg sm:text-xl lg:text-lg my-10 mx-auto text-center font-nunito">
+          className="flex flex-col space-y-5 max-w-4xl text-lg my-10 mx-auto text-center font-nunito">
           <p>{accomodationTranslations[language].description1}</p>
           <p>{accomodationTranslations[language].description2}</p>
         </motion.div>

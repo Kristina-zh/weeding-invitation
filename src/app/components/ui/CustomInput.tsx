@@ -38,7 +38,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
 
   return (
     <div className="relative w-full">
-      <label className={`absolute -top-3 left-3 text-sm bg-white px-1 font-nunito ${error ? "text-red-500" : "text-gray-600"}`}
+      <label className={`text-sm bg-white px-1 font-nunito ${error ? "text-red-500" : "text-gray-600"}`}
       >
         {label}
       </label>
