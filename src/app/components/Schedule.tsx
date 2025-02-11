@@ -73,7 +73,7 @@ const Events = () => {
   return (
     <motion.section
       id="schedule"
-      className="relative h-full p-10 md:p-20 bg-gray-50 flex flex-col items-center font-nunito"
+      className="relative h-full p-5 md:p-20 bg-gray-50 flex flex-col items-center font-nunito"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}

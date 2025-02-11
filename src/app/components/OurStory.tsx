@@ -44,7 +44,7 @@ const OurStory = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[80px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[30px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][1]}
       </motion.h2>
@@ -52,7 +52,7 @@ const OurStory = () => {
       <div className="flex flex-col lg:flex-row max-w-xl lg:max-w-4xl mx-auto justify-center items-center">
         <motion.div
           variants={videoVariants}
-          className="max-w-[300px] flex-1 justify-center items-center overflow-hidden relative h-[320px] lg:h-[480px] my-10 lg:my-0"
+          className="max-w-[300px] flex-1 justify-center items-center overflow-hidden relative h-[320px] lg:h-[480px] my-5 lg:my-0"
         >
           <video
             src="/images/us_animation.mp4"

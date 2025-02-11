@@ -54,17 +54,17 @@ export const homeTranslations = {
     title: { kristina: 'Kristina', and: '&', alan: 'Alan' },
     description:
       'You are invited to celebrate the most special day of our lives with us!',
-    description2: '25th October 2025, 2:00pm',
+    description2: '25th October 2025, 2:30pm',
     description3: 'Hacienda Acamilpa, Cuernavaca, Mexico',
     button1: 'View Map',
     button2: 'RSVP',
-    note: '*Please confirm your attendance by the 31th July',
+    note: '*Please confirm your attendance by July 31st',
   },
   Spanish: {
     title: { kristina: 'Kristina', and: '&', alan: 'Alan' },
     description:
       'Te invitamos a celebrar con nosotros el día más especial de nuestras vidas',
-    description2: '25 de Octubre 2025, 2:00pm',
+    description2: '25 de Octubre 2025, 2:30pm',
     description3: 'Hacienda Acamilpa, Cuernavaca, México',
     button1: 'Cómo llegar',
     button2: 'Confirmar asistencia',
@@ -74,7 +74,7 @@ export const homeTranslations = {
     title: { kristina: 'Кристина', and: 'и', alan: 'Алан' },
     description:
       'Приглашаем вас отпраздновать самый особенный день в нашей жизни вместе с нами!',
-    description2: '25 Октября 2025, 14:00',
+    description2: '25 Октября 2025, 14:30',
     description3: 'Hacienda Acamilpa, Куэрнавака, Мексика',
     button1: 'Как Добраться',
     button2: 'Подтвердить Присутствие',
@@ -84,7 +84,7 @@ export const homeTranslations = {
     title: { kristina: 'Крістіна', and: 'та', alan: 'Алан' },
     description:
       'Запрошуємо вас відсвяткувати з нами найособливіший день нашого життя!',
-    description2: '25 Жовтня 2025, 14:00',
+    description2: '25 Жовтня 2025, 14:30',
     description3: 'Hacienda Acamilpa, Куернавака, Мексика',
     button1: 'Як Доїхати',
     button2: 'Підтвердити Присутність',
@@ -95,35 +95,35 @@ export const homeTranslations = {
 export const ourStoryTranslations = {
   English: {
     description1:
-      'We met back in 2015 thanks to mutual friends who thought it was a good idea to introduce us. After six years of long distance between London, Kiev, and exploring lots of the world together, we finally decided it was time for a change and moved to incredible Mexico. And here we are, happier than ever, ready for the next chapter.',
+      'We met in Kyiv back in 2015 through mutual friends. After six years of long distance between London and Kyiv, as well as exploring lots of the world together, we finally decided it was time for a change and moved to incredible Mexico. And here we are, happier than ever, ready for the next chapter.',
     description2:
-      'Our son, Alex, has brought so much joy into our lives, and we can’t wait to celebrate our love in this beautiful country that’s become our home.',
+      "But things have changed. Now there are three of us, and we couldn't be happier. Our son, Alexander, joined us in 2022, keeping us on our toes and making sure life is never boring.",
     description3:
-      'Who would’ve known that a chance meeting 10 years ago would lead us to this amazing journey?',
+      'This year marks a decade of us being together! And what better way to celebrate than by gathering all the people we love in one place?',
   },
   Spanish: {
     description1:
-      'Nos conocimos en el año 2015 por medio de amigos en común que pensaron que era una buena idea presentarnos. Después de seis años de vivir entre Londres, Kiev y de explorar mucho mundo juntos, finalmente decidimos que era hora de un cambio y nos mudamos a México. Y aquí estamos, más felices que nunca, listos para el próximo capítulo.',
+      'Nos conocimos en Kyiv en 2015 a través de amigos en común. Después de seis años de relación a distancia entre Londres y Kyiv, y de explorar gran parte del mundo juntos, finalmente decidimos que era momento de un cambio y nos mudamos a la increíble México. Y aquí estamos, más felices que nunca y listos para el siguiente capítulo.',
     description2:
-      'Nuestro hijo, Alex, ha traído muchísima alegría a nuestras vidas y estamos ansiosos por celebrar nuestro amor en este hermoso país que se ha convertido en nuestro hogar.',
+      'Pero la vida ha cambiado. Ahora somos tres, y no podríamos estar más felices. Nuestro hijo, Alexander, llegó en 2022 y nos ha cambiado nuestras vidas de una forma increíble.',
     description3:
-      '¿Quién hubiera pensado que ese encuentro hace 10 años nos llevaría a este increíble viaje juntos?',
+      '¡Este año celebramos 10 años juntos! ¿Y qué mejor manera de festejarlo que reuniendo a todas las personas que amamos en un solo lugar?',
   },
   Russian: {
     description1:
-      'Мы познакомились в 2015 году благодаря общим друзьям. После шести лет отношений на расстоянии между Лондоном и Киевом, а так же совместных путешествий по миру, мы поняли, что пришло время для перемен, и переехали в удивительную Мексику. И вот мы здесь, счастливее, чем когда-либо, готовые к следующей главе.',
+      'Мы познакомились в Киеве в 2015 году благодаря общим друзьям. После шести лет отношений на расстоянии между Лондоном и Киевом и множества совместных путешествий по миру мы решили, что пора что-то менять, и переехали в потрясающую Мексику. И вот мы здесь — счастливее, чем когда-либо, и готовы к следующей главе.',
     description2:
-      'Наш сын, Алекс, принес много радости в нашу жизнь, и мы с нетерпением ждем, чтобы отпраздновать нашу любовь в этой прекрасной стране, которая стала нашим новым домом.',
+      'Но жизнь изменилась. Теперь нас трое, и мы не могли бы быть счастливее. Наш сын Александр появился в 2022 году, держит нас в тонусе и не даёт скучать.',
     description3:
-      'Кто бы мог подумать, что случайная встреча 10 лет назад приведет нас к этому невероятному путешествию?',
+      'В этом году исполняется 10 лет, как мы вместе! И какой может быть лучший способ отпраздновать это, чем собрать всех, кого мы любим, в одном месте?',
   },
   Ukrainian: {
     description1:
-      'Ми познайомилися у 2015 році завдяки спільним друзям. Після шести років стосунків на відстані між Лондоном та Києвом, і спільних подорожей світом ми зрозуміли, що настав час для змін, і переїхали до неймовірної Мексики. І ось ми тут, щасливі як ніколи, готові до нового етапу.',
+      'Ми познайомилися в Києві у 2015 році завдяки спільним друзям. Після шести років стосунків на відстані між Лондоном та Києвом і багатьох подорожей світом, ми зрозуміли, що настав час змін, і переїхали до неймовірної Мексики. І ось ми тут — щасливі як ніколи та готові до нового розділу.',
     description2:
-      'Наш син, Алекс, приніс у наше життя багато радості, і ми не можемо дочекатися, щоб відсвяткувати наше кохання у цій прекрасній країні, яка стала нашим новим домом.',
+      'Але життя змінилося. Тепер нас троє, і ми не могли б бути щасливішими. Наш син, Олександр, народився у 2022 році, тримає нас у тонусі та робить кожен день яскравим і незабутнім.',
     description3:
-      'Хто б міг подумати, що випадкова зустріч 10 років тому приведе нас до цієї дивовижної подорожі?',
+      'Цього року виповнюється 10 років, як ми разом! І який кращий спосіб це відсвяткувати, ніж зібрати всіх, кого ми любимо, в одному місці?',
   },
 };
 
@@ -136,22 +136,23 @@ export const weddingTranslations = {
         '3:00 PM: Ceremony',
         '4:00 PM: Cocktail',
         '5:30 PM: Reception',
-        '8:00 PM: Party Starts',
+        '8:00 PM: Party starts!',
       ],
     },
     {
       title: 'How to get there',
       content: [
-        'On the day of the wedding, return transport to the Hacienda will be provided for guests that require it. Pick up and returns will be at the Radisson and Fiesta Inn hotels only.',
+        'On the day of the wedding, return transport to the Hacienda will be provided for guests that require it. Pick up and returns will be at the Radisson, Fiesta Inn and One hotels only.',
         'Specific transport timings and further details will be communicated closer to the date.',
       ],
     },
     {
       title: 'Dress Code',
       content: [
-        'We’d love it if you could incorporate our color guidelines where possible, such as with a tie, hat, pin, etc.  ',
-        'You can find some inspiration here:',
+        'Formal attire.',
+        'You can find our colour guidelines and some inspiration here:',
       ],
+
       link: 'LINK',
     },
     {
@@ -159,10 +160,12 @@ export const weddingTranslations = {
       content: [
         'After living together for so many years, we already have everything we could have wished for.',
         'But if you’d like to gift something to us, you can contribute towards our honeymoon here:',
-        'HSBC Bank',
-        'Alan Paul Cripps',
-        'Account number: 11400002',
-        'Sort Code: 40-21-12',
+        [
+          'HSBC Bank',
+          'Alan Paul Cripps',
+          'Account number: 11400002',
+          'Sort Code: 40-21-12',
+        ],
         'For transfers from Europe, please use IBAN code: GB34HBUK40211211400002',
       ],
     },
@@ -194,7 +197,7 @@ export const weddingTranslations = {
     {
       title: 'Cómo llegar',
       content: [
-        'Ofrecemos transporte redondo a la hacienda para los huéspedes que así lo requieran. Los puntos de encuentro únicamente serán en los hoteles Radisson y Fiesta Inn de Cuernavaca, así es que si no te estás hospedando en alguno de esos dos, puedes tomar un taxi de tu hotel para llegar a uno de estos hoteles.',
+        'Ofrecemos transporte redondo a la hacienda para los huéspedes que lo requieran. Los puntos de encuentro únicamente serán en los hoteles Radisson, Fiesta Inn y One en Cuernavaca, así es que si no te estás hospedando en alguno de estos, puedes tomar un taxi de tu hotel para llegar a uno de estos hoteles.',
         'Los horarios específicos de partida se comunicarán más cerca de la fecha.',
       ],
     },
@@ -202,7 +205,7 @@ export const weddingTranslations = {
       title: 'Código de vestimenta',
       content: [
         'El código es formal. Si gustas, puedes usar una prenda que responda a la paleta de colores de nuestra boda',
-        'Para algunas ideas, sigue este link: LINK',
+        'Para algunas ideas, sigue este link:',
       ],
       link: 'LINK',
     },
@@ -245,7 +248,7 @@ export const weddingTranslations = {
     {
       title: 'Как добраться',
       content: [
-        'В день свадьбы будет организован трансфер до усадьбы для гостей, которым он необходим. Отправление и возвращение будут осуществляться только от отелей Radisson и Fiesta Inn.',
+        'В день свадьбы будет организован трансфер до усадьбы для гостей, которым он необходим. Отправление и возвращение будут осуществляться только от отелей Radisson, Fiesta Inn и One.',
         'Точное расписание транспорта и дополнительная информация будут сообщены ближе к дате.',
       ],
     },
@@ -253,7 +256,7 @@ export const weddingTranslations = {
       title: 'Дресс-код',
       content: [
         'Мы будем рады, если вы сможете учесть наши цветовые рекомендации, например, используя галстук, шляпу, значок и т. д.',
-        'Вы можете найти вдохновение здесь: LINK',
+        'Вы можете найти вдохновение здесь:',
       ],
       link: 'ССЫЛКА',
     },
@@ -263,7 +266,7 @@ export const weddingTranslations = {
         'Мы живем вместе уже много лет и у нас есть все, о чем мы могли мечтать.',
         'Но если вы хотите сделать нам подарок, вы можете внести вклад в наш медовый месяц здесь:',
         'Банк HSBC',
-        'Алан Пол Криппс',
+        'Alan Paul Cripps',
         'Номер счета: 11400002',
         'Код банка: 40-21-12',
         'Для переводов из Европы, пожалуйста, используйте IBAN-код: GB34HBUK40211211400002',
@@ -297,7 +300,7 @@ export const weddingTranslations = {
     {
       title: 'Як дістатися',
       content: [
-        'У день весілля буде організовано транспорт до маєтку для гостей, які цього потребують. Транспорт курсуватиме лише між готелями Radisson і Fiesta Inn.',
+        'У день весілля буде організовано транспорт до маєтку для гостей, які цього потребують. Транспорт курсуватиме лише між готелями Radisson, Fiesta Inn і One.',
         'Точний графік руху транспорту та додаткова інформація будуть повідомлені ближче до дати події.',
       ],
     },
@@ -305,7 +308,7 @@ export const weddingTranslations = {
       title: 'Дрес-код',
       content: [
         'Ми будемо раді, якщо ви зможете врахувати нашу кольорову гаму, наприклад, у вигляді краватки, капелюха, значка тощо.',
-        'Надихнутися можна тут: LINK',
+        'Надихнутися можна тут:',
       ],
       link: 'ПОСИЛАННЯ',
     },
@@ -346,19 +349,34 @@ export const accomodationTranslations = {
     codeText: 'Booking code',
     distance: 'Distance to hacienda',
     mins: 'mins',
-    fiestaText: 'No code, please check availability directly.',
+    radissonText:
+      "Please send a WhatsApp message to the hotel at +52 777 478 8700, mentioning the code 5015420, your stay dates (Friday, October 24th to Sunday, October 26th), and the event name (Kristina & Alan's wedding). They will provide a payment link.",
+    fiestaText: 'No code required, please check availability directly.',
+    fiestaInnText:
+      "Please call +1 800 343 7821 or send a WhatsApp message to the hotel at +52 443 137 8728, mentioning the code G1T8YR, your stay dates (Friday, October 24th to Sunday, October 26th), and the event name (Kristina & Alan's wedding). They will provide a payment link.",
     link: 'Visit Hotel',
+    generalText:
+      "Please send a WhatsApp message to your chosen hotel mentioning the booking code, your stay dates (Friday, October 24th to Sunday, October 26th), and the event name (Kristina & Alan's wedding). They will provide a payment link.",
   },
   Spanish: {
     description1:
-      'Morelos es uno de los destinos de bodas más populares de México. Por lo tanto, los hoteles se saturan muy rápidamente.',
+      'Morelos es uno de los destinos de bodas más populares de México. Por lo tanto, los hoteles se saturan rápidamente.',
     description2:
       'Te recomendamos que reserves lo antes posible para evitar mayores costos o falta de espacio. Estas son algunas de nuestras recomendaciones:',
     codeText: 'Código de reserva',
     distance: 'Distancia a la hacienda',
     mins: 'mins',
-    fiestaText: 'Sin código, consulte disponibilidad directamente.',
-    link: 'Reservar',
+    radissonText:
+      'Por favor, envía un mensaje de WhatsApp al hotel al +52 777 478 8700 mencionando el código 5015420, las fechas de tu estancia y el nombre del evento (Boda de Kristina & Alan). Te proporcionarán un enlace de pago.',
+    fiestaText:
+      'No se necesita código, consulta la disponibilidad directamente.',
+    fiestaInnText:
+      'Por favor, llama al +1 800 343 7821 o envía un mensaje de WhatsApp al hotel al +52 443 137 8728 mencionando el código G1T8YR, las fechas de tu estancia (del viernes 24 al domingo 26 de octubre) y el nombre del evento (Boda de Kristina & Alan). Te proporcionarán un enlace de pago.',
+    fiestaOneText:
+      'Por favor, llama al +1 800 343 7821 o envía un mensaje de WhatsApp al hotel al +52 443 137 8728 mencionando el código G1T8YU, las fechas de tu estancia (del viernes 24 al domingo 26 de octubre) y el nombre del evento (Boda de Kristina & Alan). Te proporcionarán un enlace de pago.',
+    link: 'Reservar hotel',
+    generalText:
+      'Llama o envía un mensaje de WhatsApp al hotel de tu elección mencionando el código de reserva, las fechas de tu estancia y el nombre del evento (boda de Kristina & Alan).',
   },
   Russian: {
     description1:
@@ -368,8 +386,16 @@ export const accomodationTranslations = {
     codeText: 'Код бронирования',
     distance: 'Расстояние до Hacianda',
     mins: 'минут',
-    fiestaText: 'Без кода, наличие номеров проверьте напрямую.',
+    radissonText:
+      'Отправьте сообщение в WhatsApp отеля по номеру +52 777 478 8700, указав код 5015420, даты проживания (пятница, 24 октября – воскресенье, 26 октября) и название события (свадьба Kristina & Alan). Вам пришлют ссылку для оплаты.',
+    fiestaText: 'Код не требуется, уточняйте наличие номеров напрямую.',
+    fiestaInnText:
+      'Позвоните по телефону +1 800 343 7821 или отправьте сообщение в WhatsApp отеля по номеру +52 443 137 8728, указав код G1T8YR, даты проживания (пятница, 24 октября – воскресенье, 26 октября) и название события (свадьба Kristina & Alan). Вам пришлют ссылку для оплаты.',
+    fiestaOneText:
+      'Позвоните по телефону +1 800 343 7821 или отправьте сообщение в WhatsApp отеля по номеру +52 443 137 8728, указав код G1T8YU, даты проживания (пятница, 24 октября – воскресенье, 26 октября) и название события (свадьба Kristina & Alan). Вам пришлют ссылку для оплаты.',
     link: 'Посетить отель',
+    generalText:
+      'Пожалуйста, отправьте сообщение в WhatsApp в выбранный вами отель, указав код бронирования, даты пребывания (пятница, 24 октября – воскресенье, 26 октября) и название мероприятия (Свадьба Кристины и Алана). Вам отправят ссылку для оплаты.',
   },
   Ukrainian: {
     description1:
@@ -379,8 +405,16 @@ export const accomodationTranslations = {
     codeText: 'Код бронювання',
     distance: 'Відстань до готелю',
     mins: 'хвилин',
-    fiestaText: 'Без коду, перевірте доступність напряму.',
+    radissonText:
+      'Будь ласка, надішліть повідомлення в WhatsApp готелю за номером +52 777 478 8700, вказавши код 5015420, дати перебування (п’ятниця, 24 жовтня – неділя, 26 жовтня) та назву події (весілля Kristina & Alan). Вам нададуть посилання для оплати.',
+    fiestaText: 'Код не потрібен, перевірте доступність напряму.',
+    fiestaInnText:
+      'Будь ласка, зателефонуйте за номером +1 800 343 7821 або надішліть повідомлення в WhatsApp готелю за номером +52 443 137 8728, вказавши код G1T8YR, дати перебування (п’ятниця, 24 жовтня – неділя, 26 жовтня) та назву події (весілля Kristina & Alan). Вам нададуть посилання для оплати.',
+    fiestaOneText:
+      'Будь ласка, зателефонуйте за номером +1 800 343 7821 або надішліть повідомлення в WhatsApp готелю за номером +52 443 137 8728, вказавши код G1T8YU, дати перебування (п’ятниця, 24 жовтня – неділя, 26 жовтня) та назву події (весілля Kristina & Alan). Вам нададуть посилання для оплати.',
     link: 'Переглянути готель',
+    generalText:
+      'Будь ласка, надішліть повідомлення в WhatsApp до обраного вами готелю, вказавши код бронювання, дати перебування (п’ятниця, 24 жовтня – неділя, 26 жовтня) та назву події (Весілля Крістіни та Алана). Вам нададуть посилання для оплати.',
   },
 };
 
@@ -394,7 +428,7 @@ export const rsvpTranslations = {
     firstName: 'First Name',
     lastName: 'Last Name',
     phone: 'Contact Number',
-    question3: 'Do you have any allergies/intolerance?',
+    question3: 'Do you have any allergies?',
     question4: 'Do you want to leave a message? (optional)',
     button: 'Submit',
     loading: 'Loading...',

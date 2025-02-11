@@ -57,7 +57,7 @@ const Wedding = () => {
   return (
     <motion.section
       id="wedding-details"
-      className="relative h-full p-10 lg:p-20 bg-gray-50 flex flex-col items-center font-nunito"
+      className="relative h-full p-5 lg:p-20 bg-gray-50 flex flex-col items-center font-nunito"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
@@ -71,7 +71,7 @@ const Wedding = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[80px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[30px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][2]}
       </motion.h2>
@@ -95,24 +95,45 @@ const Wedding = () => {
             <div className="p-5 lg:px-10 lg:py-8 md:w-[75%] text-center md:text-left">
               <h3 className="text-2xl font-bold text-gray-800 mb-5">{detail.title}</h3>
               <ul className="text-gray-600 space-y-3 tracking-wide">
-                {detail.content.slice(0, -1).map((desc, idx) => (
-                  <li key={idx}>{desc}</li>
-                ))}
+                {detail.content.slice(0, -1).map((desc, idx) => {
+                  if (Array.isArray(desc)) {
+                    return (
+                      <li key={idx}>
+                        <ul>
+                          {desc.map((subDesc, subIdx) => (
+                            <li key={subIdx}>{subDesc}</li>
+                          ))}
+                        </ul>
+                      </li>
+                    );
+                  }
 
-                <li className="flex justify-start items-center">
-                  <span>{detail.content[detail.content.length - 1]}</span>
-                  {detail.link && (
-                    <a
-                      href={detail.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-sage underline font-semibold ml-2"
-                    >
-                      {detail.linkTitle}
-                    </a>
-                  )}
+                  return (
+                    <li key={idx}>
+                      {desc}
+                    </li>
+                  );
+                })}
+
+                <li className="flex justify-center items-center">
+                  <p>
+                    {detail.content[detail.content.length - 1]}
+                    {detail.link && (
+                      <span>
+                        <a
+                          href={detail.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-sage underline font-semibold ml-2"
+                        >
+                          {detail.linkTitle}
+                        </a>
+                      </span>
+                    )}
+                  </p>
                 </li>
               </ul>
+
             </div>
 
           </motion.div>

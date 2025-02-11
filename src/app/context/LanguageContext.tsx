@@ -25,10 +25,11 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 interface LanguageProviderProps {
   children: ReactNode;
+  initialLanguage?: keyof typeof flags;
 }
 
-export const LanguageProvider = ({ children }: LanguageProviderProps) => {
-  const [language, setLanguage] = useState<keyof typeof flags>("English");
+export const LanguageProvider = ({ children, initialLanguage = "English" }: LanguageProviderProps) => {
+  const [language, setLanguage] = useState<keyof typeof flags>(initialLanguage);
   const value = { language, setLanguage, flags, menus };
 
   return (

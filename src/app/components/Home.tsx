@@ -19,6 +19,18 @@ const Home = () => {
 
   if (!isClient) return null;
 
+  const scrollToSection = () => {
+    const section = document.getElementById('invitation');
+    if (section) {
+      const offset = 70;
+      const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: sectionPosition - offset,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 1 } },
@@ -50,13 +62,30 @@ const Home = () => {
         />
         <motion.h1
           variants={textVariants}
-          className={`text-[50px] md:text-[60px] lg:text-[120px] text-center mt-4 ${fontClass} absolute bottom-[0] lg:bottom-[10%] left-[-50px] leading-none`}
+          className={`text-[40px] md:text-[60px] lg:text-[120px] text-center mt-4 ${fontClass} absolute bottom-[0] lg:bottom-[10%] left-[-50px] leading-none`}
         >
           <span className="block">{homeTranslations[language].title.kristina}</span>
           <span className="block ml-[180px] md:ml-[320px] lg:ml-[400px]">{homeTranslations[language].title.and} {homeTranslations[language].title.alan}</span>
         </motion.h1>
+        <motion.div
+          className="hidden lg:visible absolute bottom-5 w-full lg:flex lg:justify-center"
+          animate={{ y: [0, -10, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+          onClick={scrollToSection}
+        >
+          <svg
+            className="w-10 h-10 text-black"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7 7 7-7"></path>
+          </svg>
+        </motion.div>
       </motion.div>
       <motion.div
+        id="invitation"
         className="max-w-xl w-screen bg-white p-8 lg:p-16 h-full flex items-center justify-center relative"
         initial="hidden"
         whileInView="visible"
@@ -74,11 +103,11 @@ const Home = () => {
       >
         <div className="flex flex-col space-y-10 max-w-5xl mx-auto justify-center items-center">
           <motion.div variants={textVariants} className="flex-1 text-center text-xl font-nunito mx-auto">
-            <p className="mb-5 lg:mb-10 text-xl lg:text-2xl mx-auto">
+            <p className="mb-5 lg:mb-10 text-xl lg:text-2xl mx-auto px-2">
               <strong>{homeTranslations[language].description}</strong>
             </p>
-            <p className="text-lg lg:text-xl">{homeTranslations[language].description2}</p>
-            <p className="text-lg lg:text-xl">{homeTranslations[language].description3}</p>
+            <p className="text-lg lg:text-xl px-2">{homeTranslations[language].description2}</p>
+            <p className="text-lg lg:text-xl px-2">{homeTranslations[language].description3}</p>
 
             <motion.div className="my-10 flex flex-col lg:flex-row justify-center mx-auto gap-4" variants={containerVariants}>
               {['/images/h1.jpg', '/images/h2.jpg', '/images/h3.jpg'].map((src, index) => (
@@ -112,7 +141,7 @@ const Home = () => {
                 <CustomButton>{homeTranslations[language].button2}*</CustomButton>
               </ScrollLink>
             </div>
-            <p className="mt-10">{homeTranslations[language].note}</p>
+            <p className="mt-10 text-sm md:text-md px-5">{homeTranslations[language].note}</p>
           </motion.div>
         </div>
       </motion.div>

@@ -13,10 +13,11 @@ const Accommodations = () => {
     {
       id: 1,
       title: "Radisson Cuernavaca",
-      description: `${accomodationTranslations[language].codeText}: 5015420`,
       image: "/images/hotel1.png",
       distance: `${accomodationTranslations[language].distance}: 30 ${accomodationTranslations[language].mins}.`,
       link: "https://radissoncuernavaca.mx",
+      whatsup: "+52 777 478 8700",
+      code: "5015420"
     },
     {
       id: 2,
@@ -29,18 +30,20 @@ const Accommodations = () => {
     {
       id: 3,
       title: "Fiesta Inn Cuernavaca",
-      description: `${accomodationTranslations[language].codeText}: G1T8YR`,
       image: "/images/hotel3.jpg",
       distance: `${accomodationTranslations[language].distance}: 45 ${accomodationTranslations[language].mins}.`,
       link: "https://www.fiestamericanatravelty.com/fiesta-inn/hoteles/fiesta-inn-cuernavaca",
+      whatsup: "+52 443 137 8728",
+      code: "G1T8YR"
     },
     {
       id: 4,
       title: "ONE hotel Cuernavaca",
-      description: `${accomodationTranslations[language].codeText}: G1T8YU`,
       image: "/images/hotel4.jpg",
       distance: `${accomodationTranslations[language].distance}: 45 ${accomodationTranslations[language].mins}.`,
       link: "https://www.fiestamericanatravelty.com/one-hoteles/hoteles/one-cuernavaca",
+      whatsup: "+52 443 137 8728",
+      code: "G1T8YU"
     },
   ];
 
@@ -64,7 +67,7 @@ const Accommodations = () => {
   return (
     <motion.section
       id="accommodation"
-      className="relative bg-sage p-10 lg:p-20 h-full flex items-center justify-center"
+      className="relative bg-sage p-5 lg:p-20 h-full flex items-center justify-center"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -81,7 +84,7 @@ const Accommodations = () => {
     >
       <motion.h2
         variants={titleVariants}
-        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[40px] lg:text-[80px] text-gray-500 ${fontClass}`}
+        className={`absolute top-0 pr-5 right-0 lg:right-10 text-[30px] lg:text-[80px] text-gray-500 ${fontClass}`}
       >
         {menus[language][3]}
       </motion.h2>
@@ -110,11 +113,13 @@ const Accommodations = () => {
                   className="w-full h-48 object-cover"
                 />
                 <motion.div
-                  className="p-4 flex flex-col h-[200px]">
+                  className="p-4 flex flex-col lg:h-[200px]">
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold font-nunito mb-2">{hotel.title}</h3>
+                    <p className="text-gray-700 mb-2 font-nunito">{hotel.distance}</p>
                     <p className="text-gray-700 font-nunito">{hotel.description}</p>
-                    <p className="text-gray-700 mb-4 font-nunito">{hotel.distance}</p>
+                    {hotel.whatsup && <p className="text-gray-700 font-nunito">WhatsApp: {hotel.whatsup}</p>}
+                    {hotel.code && <p className="text-gray-700 font-nunito">{accomodationTranslations[language].codeText}: {hotel.code}</p>}
                   </div>
                   <Link
                     href={hotel.link}
@@ -130,6 +135,13 @@ const Accommodations = () => {
             ))}
           </div>
         </div>
+        <motion.div
+          variants={textVariants}
+          className="flex flex-col space-y-5 max-w-4xl text-lg my-10 mx-auto text-center font-nunito">
+          <p>{accomodationTranslations[language].generalText}</p>
+        </motion.div>
+
+
       </div>
     </motion.section>
   );
