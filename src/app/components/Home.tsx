@@ -62,19 +62,19 @@ const Home = () => {
         />
         <motion.h1
           variants={textVariants}
-          className={`text-[40px] md:text-[60px] lg:text-[120px] xl:text-[140px] text-center mt-4 ${fontClass} absolute bottom-[0] lg:bottom-[10%] left-[-50px] xl:left-[100px] leading-none`}
+          className={`text-white text-[34px] md:text-[60px] lg:text-[110px] text-center mt-4 ${fontClass} absolute bottom-[30%] left-[-60px] xl:left-[100px] leading-none`}
         >
           <span className="block">{homeTranslations[language].title.kristina}</span>
           <span className="block ml-[180px] md:ml-[320px] lg:ml-[400px]">{homeTranslations[language].title.and} {homeTranslations[language].title.alan}</span>
         </motion.h1>
         <motion.div
-          className="hidden lg:visible absolute bottom-5 w-full lg:flex lg:justify-center"
+          className="hidden lg:visible absolute bottom-10 w-full lg:flex lg:justify-center"
           animate={{ y: [0, -10, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
           onClick={scrollToSection}
         >
           <svg
-            className="w-10 h-10 text-black"
+            className="w-10 h-10 text-white"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"

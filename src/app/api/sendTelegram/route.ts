@@ -8,7 +8,6 @@ export async function POST(req: Request) {
     const {
       firstName,
       lastName,
-      email,
       isJoining,
       isPlusOne,
       isTransportNeeded,
@@ -21,7 +20,6 @@ export async function POST(req: Request) {
       RSVP:
       First Name: ${firstName}
       Last Name: ${lastName}
-      Email: ${email}
       Joining: ${isJoining ? 'Yes' : 'No'}
       Plus One: ${isPlusOne ? 'Yes' : 'No'}
       Is Transport Needed: ${isTransportNeeded ? 'Yes' : 'No'}

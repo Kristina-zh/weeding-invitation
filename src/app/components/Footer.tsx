@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLanguage } from "../context/LanguageContext";
 import { footerTranslations } from "../translations";
@@ -19,32 +18,23 @@ const Footer = () => {
   };
 
   return (
-    <footer id="footer" className="h-[240px] lg:h-[540px] flex flex-col justify-center items-center"
+    <footer id="footer" className="bg-black w-screen max-w-[2000px] h-[100px] lg:h-[200px] flex flex-col justify-center items-center"
     >
-      <div className="relative w-screen max-w-[2000px] h-[240px] lg:h-[540px]">
-        <Image
-          src="/images/footer.jpg"
-          alt="hero image"
-          width={800}
-          height={400}
-          className="w-full h-full object-cover"
-        />
-        <motion.div
-          className="absolute inset-0 bg-sage flex items-center justify-center"
-          variants={backgroundVariants}
+      <motion.div
+        className="flex items-center justify-center"
+        variants={backgroundVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.h2
+          className={`text-white text-2xl lg:text-4xl text-center ${fontClass}`}
+          variants={titleVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.h2
-            className={`text-2xl lg:text-4xl text-center ${fontClass}`}
-            variants={titleVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            {footerTranslations[language].text}
-          </motion.h2>
-        </motion.div>
-      </div>
+          {footerTranslations[language].text}
+        </motion.h2>
+      </motion.div>
     </footer>
   );
 };
