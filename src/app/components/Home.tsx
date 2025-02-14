@@ -49,7 +49,7 @@ const Home = () => {
   const fontClass = language === "Russian" || language === "Ukrainian" ? "font-greatvibes" : "font-windsong";
 
   return (
-    <section id="home" className="bg-white flex flex-col justify-center items-center pt-[40px]">
+    <section id="home" className="bg-white flex flex-col justify-center items-center pt-[64px]">
       <motion.div className="w-screen max-w-[2000px] h-[240px] lg:h-[640px] relative" variants={containerVariants}
         initial="hidden"
         animate="visible">
