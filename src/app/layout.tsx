@@ -42,6 +42,7 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:image" content="https://kristina-and-alan.com/us.jpg"></meta>
       </head>
       <body
         className={`${nunito.variable} ${poppins.variable} ${windSong.variable} ${greatVibes.variable} antialiased`}
