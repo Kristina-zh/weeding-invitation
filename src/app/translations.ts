@@ -185,14 +185,14 @@ export const weddingTranslations = {
     {
       title: 'Cómo llegar',
       content: [
-        'Ofrecemos transporte redondo a la hacienda para los huéspedes que lo requieran. Los puntos de encuentro únicamente serán en los hoteles Radisson, Fiesta Inn y One en Cuernavaca, así es que si no te estás hospedando en alguno de estos, puedes tomar un taxi de tu hotel para llegar a uno de estos hoteles.',
-        'Los horarios específicos de partida se comunicarán más cerca de la fecha.',
+        'Ofrecemos transporte redondo a la hacienda para los huéspedes que lo requieran. Los puntos de encuentro serán en los hoteles Radisson, Fiesta Inn y One en Cuernavaca, así es que si no te estás hospedando en alguno de estos, puedes llegar a unos de estos para que uses el transporte.',
+        'Los horarios específicos de salidas y regresos se comunicarán más cerca de la fecha.',
       ],
     },
     {
       title: 'Código de vestimenta',
       content: [
-        'El código es formal (trajes para hombres y vestidos para mujeres)',
+        'Formal.',
         'Si gustas, puedes encontrar nuestras guías de colores y algo de inspiración aquí:',
       ],
       link: 'LINK',
@@ -438,7 +438,7 @@ export const rsvpTranslations = {
     question1: 'Вы сможете присоединиться к нам?',
     question2: 'Вы приведете гостя?',
     question5:
-      'Вам нужен транспорт из вашего отеля в Куэрнаваке до асьенды? Помните, что места отправления будут только от отелей Radisson, Fiesta Inn и One.',
+      'Вам нужен транспорт из вашего отеля в Куэрнаваке до поместья? Помните, что места отправления будут только от отелей Radisson, Fiesta Inn и One.',
     firstName: 'Имя',
     lastName: 'Фамилия',
     phone: 'Контактный номер',
@@ -460,7 +460,7 @@ export const rsvpTranslations = {
     question1: 'Ви зможете приєднатися до нас?',
     question2: 'Ви приведете гостя?',
     question5:
-      'Вам потрібен транспорт з вашого готелю в Куернаваку до асьєнди? Пам’ятайте, що місця посадки будуть лише біля готелів Radisson, Fiesta Inn і One.',
+      'Вам потрібен транспорт з вашого готелю в Куернаваку до маєтку? Пам’ятайте, що місця посадки будуть лише біля готелів Radisson, Fiesta Inn і One.',
     firstName: 'Ім’я',
     lastName: 'Прізвище',
     phone: 'Контактний номер',
