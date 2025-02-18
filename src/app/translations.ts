@@ -95,7 +95,7 @@ export const ourStoryTranslations = {
     description2:
       'Hoy ya somos tres y no podríamos estar más felices. Nuestro hijo, Alexander, llegó en 2022 y nos ha cambiado nuestras vidas de una forma increíble.',
     description3:
-      '¡Este año celebramos 10 años juntos! Y qué mejor manera de festejarlo que reuniendo a todas las personas que amamos en un solo lugar',
+      '¡Este año celebramos 10 años juntos! Y qué mejor manera de festejarlo reuniendo a todas las personas que amamos en un solo lugar',
   },
   Russian: {
     description1:
@@ -185,7 +185,7 @@ export const weddingTranslations = {
     {
       title: 'Cómo llegar',
       content: [
-        'Ofrecemos transporte redondo a la hacienda para los huéspedes que lo requieran. Los puntos de encuentro serán en los hoteles Radisson, Fiesta Inn y One en Cuernavaca, así es que si no te estás hospedando en alguno de estos, puedes llegar a unos de estos para que uses el transporte.',
+        'Ofrecemos transporte redondo a la hacienda para los huéspedes que lo requieran. Los puntos de encuentro serán en los hoteles Radisson, Fiesta Inn y One en Cuernavaca, así es que si no te estás hospedando en alguno de estos, puedes llegar a unos de estos puntos para que uses el transporte.',
         'Los horarios específicos de salidas y regresos se comunicarán más cerca de la fecha.',
       ],
     },
@@ -203,9 +203,9 @@ export const weddingTranslations = {
         'Después de vivir tantos años juntos, ya tenemos todo para ser felices.',
         'Pero si quieres regalarnos algo, lo puedes hacer como aportación para nuestra luna de miel:',
         'Cuenta bancaria',
-        'Khrystyna Zhuravlova',
-        'Nu Bank',
-        'CLABE: 638180010195740447',
+        'Alan Paul Cripps Perlasca',
+        'HSBC',
+        'CLABE: 021180040653162759',
       ],
     },
     {
@@ -391,8 +391,8 @@ export const accomodationTranslations = {
 export const rsvpTranslations = {
   English: {
     title: "We'd love to know if you can make it!",
-    question1: 'Will you be joining us?',
-    question2: 'Will you come with a guest?',
+    question1: 'Click this box if you are joining us',
+    question2: 'Click this box if you are coming with a guest',
     question5:
       'Do you need transport from your hotel in Cuernavaca to the hacienda? Remember, the pick up points will only be from the Radisson, Fiesta Inn and One hotels. ',
     firstName: 'First Name',
@@ -413,10 +413,10 @@ export const rsvpTranslations = {
   },
   Spanish: {
     title: '¡Nos encantaría saber si puedes acompañarnos!',
-    question1: '¿Podrás asistir?',
-    question2: '¿Traerás un acompañante?',
+    question1: 'Da click si puedes acompañarnos',
+    question2: 'Da click si vendrás con un acompañante',
     question5:
-      '¿Necesitas transporte desde tu hotel en Cuernavaca hasta la hacienda? Recuerda que los puntos de recogida serán solo desde los hoteles Radisson, Fiesta Inn y One.',
+      '¿Necesitas transporte desde tu hotel en Cuernavaca hasta la hacienda? Recuerda que los puntos de encuentro serán solo desde los hoteles Radisson, Fiesta Inn y One.',
     firstName: 'Nombre',
     lastName: 'Apellido',
     phone: 'Número de contacto',
@@ -565,7 +565,7 @@ export const eventsTranslations = {
       time: '',
       title: 'Llegadas Internacionales',
       description: [
-        'Para quienes viajan desde el extranjero, recomendamos llegar a Ciudad de México unos días antes de la boda para explorar esta vibrante ciudad.',
+        'Para quienes viajan desde el extranjero, recomendamos llegar a la Ciudad de México unos días antes de la boda para explorar esta vibrante ciudad.',
         'Las áreas recomendadas para hospedarse son Polanco, Roma y Condesa.',
       ],
       dresscode: '',
