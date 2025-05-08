@@ -10,23 +10,15 @@ const Accommodations = () => {
   const { language } = useLanguage()
 
   const hotels = [
-    {
-      id: 1,
-      title: "Radisson Cuernavaca",
-      image: "/images/hotel1.png",
-      distance: `${accomodationTranslations[language].distance}: 30 ${accomodationTranslations[language].mins}.`,
-      link: "https://radissoncuernavaca.mx",
-      whatsup: "+52 777 478 8700",
-      code: "5015420"
-    },
-    {
-      id: 2,
-      title: "Fiesta Americana",
-      description: accomodationTranslations[language].fiestaText,
-      image: "/images/hotel2.jpg",
-      distance: `${accomodationTranslations[language].distance}: 40 ${accomodationTranslations[language].mins}.`,
-      link: "https://www.fiestamericanatravelty.com/fiesta-americana/hoteles/fiesta-americana-hacienda-san-antonio-el-puente-cuernavaca",
-    },
+    // {
+    //   id: 1,
+    //   title: "Radisson Cuernavaca",
+    //   image: "/images/hotel1.png",
+    //   distance: `${accomodationTranslations[language].distance}: 30 ${accomodationTranslations[language].mins}.`,
+    //   link: "https://radissoncuernavaca.mx",
+    //   whatsup: "+52 777 478 8700",
+    //   code: "5015420"
+    // },
     {
       id: 3,
       title: "Fiesta Inn Cuernavaca",
@@ -44,6 +36,14 @@ const Accommodations = () => {
       link: "https://www.fiestamericanatravelty.com/one-hoteles/hoteles/one-cuernavaca",
       whatsup: "+52 443 137 8728",
       code: "G1T8YU"
+    },
+    {
+      id: 2,
+      title: "Fiesta Americana",
+      description: accomodationTranslations[language].fiestaText,
+      image: "/images/hotel2.jpg",
+      distance: `${accomodationTranslations[language].distance}: 40 ${accomodationTranslations[language].mins}.`,
+      link: "https://www.fiestamericanatravelty.com/fiesta-americana/hoteles/fiesta-americana-hacienda-san-antonio-el-puente-cuernavaca",
     },
   ];
 
@@ -98,7 +98,7 @@ const Accommodations = () => {
         </motion.div>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {hotels.map((hotel) => (
               <motion.div
                 key={hotel.id}
@@ -113,7 +113,7 @@ const Accommodations = () => {
                   className="w-full h-48 object-cover"
                 />
                 <motion.div
-                  className="p-4 flex flex-col lg:h-[200px]">
+                  className="p-6 flex flex-col lg:h-[200px]">
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold font-nunito mb-2">{hotel.title}</h3>
                     <p className="text-gray-700 mb-2 font-nunito">{hotel.distance}</p>
