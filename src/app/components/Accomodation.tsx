@@ -20,6 +20,14 @@ const Accommodations = () => {
     //   code: "5015420"
     // },
     {
+      id: 2,
+      title: "Fiesta Americana Hacienda San Antonio El Puente",
+      description: accomodationTranslations[language].fiestaText,
+      image: "/images/hotel2.jpg",
+      distance: `${accomodationTranslations[language].distance}: 40 ${accomodationTranslations[language].mins}.`,
+      link: "https://www.fiestamericanatravelty.com/fiesta-americana/hoteles/fiesta-americana-hacienda-san-antonio-el-puente-cuernavaca",
+    },
+    {
       id: 3,
       title: "Fiesta Inn Cuernavaca",
       image: "/images/hotel3.jpg",
@@ -36,14 +44,6 @@ const Accommodations = () => {
       link: "https://www.fiestamericanatravelty.com/one-hoteles/hoteles/one-cuernavaca",
       whatsup: "+52 443 137 8728",
       code: "G1T8YU"
-    },
-    {
-      id: 2,
-      title: "Fiesta Americana",
-      description: accomodationTranslations[language].fiestaText,
-      image: "/images/hotel2.jpg",
-      distance: `${accomodationTranslations[language].distance}: 40 ${accomodationTranslations[language].mins}.`,
-      link: "https://www.fiestamericanatravelty.com/fiesta-americana/hoteles/fiesta-americana-hacienda-san-antonio-el-puente-cuernavaca",
     },
   ];
 
@@ -113,7 +113,7 @@ const Accommodations = () => {
                   className="w-full h-48 object-cover"
                 />
                 <motion.div
-                  className="p-6 flex flex-col lg:h-[200px]">
+                  className="p-6 flex flex-col lg:h-[220px]">
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold font-nunito mb-2">{hotel.title}</h3>
                     <p className="text-gray-700 mb-2 font-nunito">{hotel.distance}</p>

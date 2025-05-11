@@ -130,7 +130,7 @@ export const weddingTranslations = {
     {
       title: 'How to get there',
       content: [
-        'On the day of the wedding, return transport to the Hacienda will be provided for guests that require it. Pick up and returns will be at the Fiesta Inn and One hotels only.',
+        'On the day of the wedding, return transport to the Hacienda will be provided for guests that require it. Pick up and returns will be at the Fiesta Americana Hacienda San Antonio El Puente, Fiesta Inn and One hotels only.',
         'Specific transport timings and further details will be communicated closer to the date.',
       ],
     },
@@ -185,7 +185,7 @@ export const weddingTranslations = {
     {
       title: 'Cómo llegar',
       content: [
-        'Ofrecemos transporte redondo a la hacienda para los huéspedes que lo requieran. Los puntos de encuentro serán en los hoteles Fiesta Inn y One en Cuernavaca, así es que si no te estás hospedando en alguno de estos, puedes llegar a unos de estos puntos para que uses el transporte.',
+        'Ofrecemos transporte redondo a la hacienda para los huéspedes que lo requieran. Los puntos de encuentro serán en los hoteles Fiesta Americana Hacienda San Antonio El Puente, Fiesta Inn y One en Cuernavaca, así es que si no te estás hospedando en alguno de estos, puedes llegar en taxi al que te quede más cercano para que uses el transporte.',
         'Los horarios específicos de salidas y regresos se comunicarán más cerca de la fecha.',
       ],
     },
@@ -236,7 +236,7 @@ export const weddingTranslations = {
     {
       title: 'Как добраться',
       content: [
-        'В день свадьбы будет организован трансфер до Hacienda для гостей, которым он необходим. Отправление и возвращение будут осуществляться только от отелей Fiesta Inn и One.',
+        'В день свадьбы будет организован трансфер до Hacienda для гостей, которым он необходим. Отправление и возвращение будут осуществляться только от отелей Fiesta Americana Hacienda San Antonio El Puente, Fiesta Inn и One.',
         'Точное расписание транспорта и дополнительная информация будут сообщены ближе к дате.',
       ],
     },
@@ -290,7 +290,7 @@ export const weddingTranslations = {
     {
       title: 'Як дістатися',
       content: [
-        'У день весілля буде організовано транспорт до маєтку для гостей, які цього потребують. Транспорт курсуватиме лише між готелями Fiesta Inn і One.',
+        'У день весілля буде організовано транспорт до маєтку для гостей, які цього потребують. Транспорт курсуватиме лише між готелями Fiesta Americana Hacienda San Antonio El Puente, Fiesta Inn і One.',
         'Точний графік руху транспорту та додаткова інформація будуть повідомлені ближче до дати події.',
       ],
     },
@@ -394,7 +394,7 @@ export const rsvpTranslations = {
     question1: 'Click this box if you are joining us',
     question2: 'Click this box if you are coming with a guest',
     question5:
-      'Do you need transport from your hotel in Cuernavaca to the hacienda? Remember, the pick up points will only be from the Fiesta Inn and One hotels. ',
+      'Do you need transport from your hotel in Cuernavaca to the hacienda? Remember, the pick up points will only be from the Fiesta Americana Hacienda San Antonio El Puente, Fiesta Inn and One hotels. ',
     firstName: 'First Name',
     lastName: 'Last Name',
     phone: 'Contact Number',
@@ -416,7 +416,7 @@ export const rsvpTranslations = {
     question1: 'Da click si puedes acompañarnos',
     question2: 'Da click si vendrás con un acompañante',
     question5:
-      '¿Necesitas transporte desde tu hotel en Cuernavaca hasta la hacienda? Recuerda que los puntos de encuentro serán solo desde los hoteles Fiesta Inn y One.',
+      '¿Necesitas transporte desde tu hotel en Cuernavaca hasta la hacienda? Recuerda que los puntos de encuentro serán solo desde los hoteles Fiesta Americana Hacienda San Antonio El Puente, Fiesta Inn y One.',
     firstName: 'Nombre',
     lastName: 'Apellido',
     phone: 'Número de contacto',
@@ -438,7 +438,7 @@ export const rsvpTranslations = {
     question1: 'Вы сможете присоединиться к нам?',
     question2: 'Вы приведете гостя?',
     question5:
-      'Вам нужен транспорт из вашего отеля в Куэрнаваке до поместья? Помните, что места отправления будут только от отелей Fiesta Inn и One.',
+      'Вам нужен транспорт из вашего отеля в Куэрнаваке до поместья? Помните, что места отправления будут только от отелей Fiesta Americana Hacienda San Antonio El Puente, Fiesta Inn и One.',
     firstName: 'Имя',
     lastName: 'Фамилия',
     phone: 'Контактный номер',
@@ -460,7 +460,7 @@ export const rsvpTranslations = {
     question1: 'Ви зможете приєднатися до нас?',
     question2: 'Ви приведете гостя?',
     question5:
-      'Вам потрібен транспорт з вашого готелю в Куернаваку до маєтку? Пам’ятайте, що місця посадки будуть лише біля готелів Fiesta Inn і One.',
+      'Вам потрібен транспорт з вашого готелю в Куернаваку до маєтку? Пам’ятайте, що місця посадки будуть лише біля готелів Fiesta Americana Hacienda San Antonio El Puente, Fiesta Inn і One.',
     firstName: 'Ім’я',
     lastName: 'Прізвище',
     phone: 'Контактний номер',
@@ -521,7 +521,7 @@ export const eventsTranslations = {
       time: '2 PM, Pick up point in Polanco',
       title: 'Transport to Cuernavaca Hotels',
       description: [
-        'Transport will be provided for international guests from a single pickup point in Polanco. The shuttle will take you to your Cuernavaca hotel (Fiesta Inn or One), 2 hours away.',
+        'Transport will be provided for international guests from a single pickup point in Polanco. The shuttle will take you to your Cuernavaca hotel (Fiesta Americana Hacienda San Antonio El Puente, Fiesta Inn or One), 2 hours away.',
         'Further details will be provided separately.',
       ],
       dresscode: '',
@@ -554,7 +554,7 @@ export const eventsTranslations = {
       time: '12:30 PM',
       title: 'Return to Mexico City',
       description: [
-        'Transport back to Mexico City will leave at 12:30pm on Sunday from the Fiesta Inn and One hotels.',
+        'Transport back to Mexico City will leave at 12:30pm on Sunday from the Fiesta Americana Hacienda San Antonio El Puente, Fiesta Inn and One hotels.',
       ],
       dresscode: '',
     },
