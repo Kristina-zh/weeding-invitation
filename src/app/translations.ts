@@ -46,7 +46,7 @@ export const homeTranslations = {
     description3: 'Hacienda Acamilpa, Cuernavaca, Mexico',
     button1: 'View map',
     button2: 'RSVP',
-    note: '*Please confirm your attendance by July 31st',
+    note: '*Please confirm your attendance by September 25th',
   },
   Spanish: {
     title: { kristina: 'Kristina', and: '&', alan: 'Alan' },
@@ -56,7 +56,7 @@ export const homeTranslations = {
     description3: 'Hacienda Acamilpa, Cuernavaca, México',
     button1: 'Cómo llegar?',
     button2: 'Confirmar asistencia',
-    note: '*Favor de confirmar asistencia antes del 31 de Julio',
+    note: '*Favor de confirmar asistencia antes del 25 de Septiembre',
   },
   Russian: {
     title: { kristina: 'Кристина', and: 'и', alan: 'Алан' },
@@ -66,7 +66,7 @@ export const homeTranslations = {
     description3: 'Hacienda Acamilpa, Куэрнавака, Мексика',
     button1: 'Как добраться?',
     button2: 'Подтвердить присутствие',
-    note: 'Пожалуйста, подтвердите свое присутствие до 31 июля.',
+    note: 'Пожалуйста, подтвердите свое присутствие до 25 сентября.',
   },
   Ukrainian: {
     title: { kristina: 'Крістіна', and: 'та', alan: 'Алан' },
@@ -76,7 +76,7 @@ export const homeTranslations = {
     description3: 'Hacienda Acamilpa, Куернавака, Мексика',
     button1: 'Як доїхати?',
     button2: 'Підтвердити присутність',
-    note: 'Будь ласка, підтвердьте свою присутність до 31 липня.',
+    note: 'Будь ласка, підтвердьте свою присутність до 25 вересня.',
   },
 };
 
