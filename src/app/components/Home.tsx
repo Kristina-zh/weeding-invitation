@@ -132,16 +132,7 @@ const Home = () => {
                   {homeTranslations[language].button1}
                 </a>
               </CustomButton>
-              <ScrollLink
-                to="rsvp"
-                smooth={true}
-                duration={500}
-                offset={-70}
-              >
-                <CustomButton>{homeTranslations[language].button2}*</CustomButton>
-              </ScrollLink>
             </div>
-            <p className="mt-10 text-sm lg:text-lg sm:text-md px-5">{homeTranslations[language].note}</p>
           </motion.div>
         </div>
       </motion.div>

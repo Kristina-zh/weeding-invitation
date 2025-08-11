@@ -19,7 +19,6 @@ const MainPage = () => {
         <OurStory />
         <WeddingDetails />
         <Accommodations />
-        <Registration />
         <Footer />
       </main>
     </>
