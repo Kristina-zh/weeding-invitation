@@ -3,7 +3,6 @@ import Home from "./Home";
 import OurStory from "./OurStory";
 import WeddingDetails from "./Wedding";
 import Accommodations from "./Accomodation";
-import Registration from "./RSVP";
 import Footer from "./Footer";
 import useActiveSection from '../useActiveSection';
 
