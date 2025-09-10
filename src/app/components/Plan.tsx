@@ -68,9 +68,9 @@ const DATA = {
         "Three activities we’d especially love you to join:",
       ],
       bullets: [
-        "Tue 21 — Breakfast at El Bajío Restaurant, Polanco, 9:30 – 11:30 AM",
-        "Wed 22 — Breakfast & experience at Xochimilco, 10:00 AM – 2:00 PM",
-        "Thu 23 — Civil Wedding dinner at Ilios Resutaurant, Polanco, 6 PM",
+        "Tue 21 — Breakfast at El Bajío Restaurant, 10:00 – 12:00 AM",
+        "Wed 22 — Experience at Xochimilco, 10:00 AM – 2:00 PM",
+        "Thu 23 — Civil Wedding dinner at Ilios Resutaurant, 6:00 PM",
       ],
     },
 
@@ -116,7 +116,7 @@ const DATA = {
           title: "Dinner — Azul Histórico",
           desc: "Iconic courtyard restaurant with refined traditional cuisine. Be ready for mezcalitas!",
           links: [
-            { label: "Website", href: "https://www.azul.rest/en/azul-hist%C3%B3rico" },
+            { label: "Azul Histórico", href: "https://www.azul.rest/en/azul-hist%C3%B3rico" },
             { label: "Maps", href: "https://www.google.com/maps/search/?api=1&query=Azul+Hist%C3%B3rico+CDMX" },
           ],
         },
