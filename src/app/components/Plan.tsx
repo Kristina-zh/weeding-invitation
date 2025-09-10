@@ -177,7 +177,7 @@ const DATA = {
           ],
         },
         {
-          time: "12 PM",
+          time: "12:00 PM",
           title: "Condesa — Parque México",
           desc: "Uber to Condesa for classic churros & chocolate at El Moro Condesa; stroll Parque México and nearby cafés/bars.",
           links: [

@@ -614,7 +614,7 @@ export const eventsTranslations = {
     },
     {
       day: 'Domingo 26 de octubre',
-      time: '12 PM',
+      time: '12:00 PM',
       title: 'Último Brunch',
       description: [
         'Para quienes aún estén en Cuernavaca, tendremos un almuerzo de recuperación a partir de las 12 PM. Una oportunidad para nuestras despedidas finales antes de que continúen explorando México o regresen a casa.',
