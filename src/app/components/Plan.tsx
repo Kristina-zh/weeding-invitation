@@ -112,7 +112,7 @@ const DATA = {
           ],
         },
         {
-          time: "5:00 PM",
+          time: "5:30 PM",
           title: "Dinner — Azul Histórico",
           desc: "Iconic courtyard restaurant with refined traditional cuisine. Be ready for mezcalitas!",
           links: [
@@ -142,7 +142,7 @@ const DATA = {
           ],
         },
         {
-          time: "~3:00 PM",
+          time: "2:30 PM",
           title: "Museo Frida Kahlo (Casa Azul)",
           desc:
             "We'll head over to Coyoacán, a beautiful pictiresque area, and book the 3:00 PM slot so we can enter Frida Kahlo's inspiring home together. Fun fact: Coldplay titled ‘Viva la Vida’ after a Frida painting they saw at Casa Azul.",
@@ -151,7 +151,7 @@ const DATA = {
           ],
         },
         {
-          time: "5:00 PM",
+          time: "4:00 PM",
           title: "Dinner in Coyoacán at La Calaca",
           desc: "Wander the plazas, markets and cafés — then we’ll dine on the square.",
           links: [
@@ -210,8 +210,8 @@ const DATA = {
         { time: "Morning", title: "Check out and head to Camino Real hotel meeting point.", desc: "" },
         {
           time: "12:00 PM",
-          title: "Meet at Camino Real Polanco — Shuttle departs 12:30 PM",
-          desc: "Shuttle to Fiesta Americana (1.5 h), then onward to Hacienda Acamilpa (45 min).",
+          title: "Meet at Camino Real Polanco — Shuttle departs 12:00 PM",
+          desc: "There will be 2 shuttles leaving from here. One will go directly to Hacienda Acamilpa for those staying there. The other will go to Fiesta Americana and Fiesta Inn.",
           links: [
             { label: "Camino Real — Maps", href: "https://www.google.com/maps/search/?api=1&query=Camino+Real+Polanco" },
           ],
@@ -230,7 +230,7 @@ const DATA = {
           ],
         },
         {
-          time: "~9:00 PM",
+          time: "10:00 PM",
           title: "Shuttle returns to Fiesta Americana",
           desc: "Wind down and rest up for the big day!",
         },
