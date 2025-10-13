@@ -148,6 +148,7 @@ export const weddingTranslations = {
       content: [
         'After living together for so many years, we already have everything we could have wished for.',
         'But if you’d like to gift something to us, you can contribute towards our honeymoon here:',
+        'For transfers from the UK:',
         [
           'HSBC Bank',
           'Alan Paul Cripps',
@@ -155,6 +156,14 @@ export const weddingTranslations = {
           'Sort Code: 40-21-12',
         ],
         'For transfers from Europe, please use IBAN code: GB34HBUK40211211400002',
+        'For transfers from the US:',
+        [
+          'Bank: HSBC Mexico',
+          'Alan Paul Cripps Perlasca',
+          'SWIFT code: BIMEMXMMXXX',
+          'Account number: 021180040653162759',
+        ],
+        '',
       ],
     },
     {
@@ -206,6 +215,7 @@ export const weddingTranslations = {
         'Alan Paul Cripps Perlasca',
         'HSBC',
         'CLABE: 021180040653162759',
+        'Para transferencias desde US, UK o Europa, ve esta página en Inglés.',
       ],
     },
     {
