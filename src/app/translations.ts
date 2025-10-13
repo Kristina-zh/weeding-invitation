@@ -211,10 +211,8 @@ export const weddingTranslations = {
       content: [
         'Después de vivir tantos años juntos, ya tenemos todo para ser felices.',
         'Pero si quieres regalarnos algo, lo puedes hacer como aportación para nuestra luna de miel:',
-        'Cuenta bancaria',
-        'Alan Paul Cripps Perlasca',
-        'HSBC',
-        'CLABE: 021180040653162759',
+        'Cuenta bancaria:',
+        ['Alan Paul Cripps Perlasca', 'HSBC', 'CLABE: 021180040653162759'],
         'Para transferencias desde US, UK o Europa, ve esta página en Inglés.',
       ],
     },
